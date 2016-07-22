@@ -10,7 +10,7 @@
 #define  url_fetch_product_id @"http://www.sendmygift.com/api/products.php?category_id";
 @interface ProductsListViewController ()
 {
-    NSArray *arr,*imagesarray;
+    NSArray *arr,*imagesarray,*productpricearray;
 }
 
 @end
@@ -73,10 +73,10 @@
                     
                    arr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
                     imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
-                    
-        
+                    productpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
 
                     NSLog(@"arr %@,%lu",arr,(unsigned long)arr.count);
+                    NSLog(@"productpricearray %@,%lu",productpricearray,(unsigned long)productpricearray.count);
                     
 
                     [tableview reloadData];
@@ -115,8 +115,17 @@
 
 {
     UITableViewCell* cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"table"];
+    if (indexPath.section==0) {
+        
+   
     cell.textLabel.text =[arr objectAtIndex:indexPath.row];
-    
+    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:15.0];
+    }
+    else if (indexPath.section==1)
+    {
+    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
+    }
+
     NSString *imageUrlString = [imagesarray objectAtIndex:indexPath.row];
     NSURL *url = [NSURL URLWithString:imageUrlString];
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
@@ -130,7 +139,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70; //You can set height of cell here.
+    return 100; //You can set height of cell here.
 }
 
 @end
