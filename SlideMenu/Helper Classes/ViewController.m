@@ -45,7 +45,7 @@
         }
     }
     
-	[super viewDidLoad];
+	[super viewDidLoad];hgjghjvbtg
     //collection view
 	collectionview.dataSource = self;
 	collectionview.delegate = self;
