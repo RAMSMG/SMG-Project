@@ -70,8 +70,8 @@
                 }else{
                     NSLog(@"%@",jsonObject);
                     
-                    arr =[[jsonObject valueForKey:@"products"]valueForKey:@"category_name"];
-                    imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
+                    arr =[[jsonObject valueForKey:@"category_name"]valueForKey:@"product_name"];
+                    imagesarray =[[jsonObject valueForKey:@"category_name"]valueForKey:@"product_image"];
                     
                     NSLog(@"arr %@,%lu",arr,(unsigned long)arr.count);
                     

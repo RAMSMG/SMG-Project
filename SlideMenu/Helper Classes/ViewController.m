@@ -98,7 +98,7 @@
 
 - (NSString *) labelForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex {
     
-    return [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"products"] objectAtIndex:childIndex] valueForKey:@"product_name"];
+    return [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"category_name"] objectAtIndex:childIndex] valueForKey:@"product_name"];
 }
 
 - (BOOL) shouldDisplaySelectedStateForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex
