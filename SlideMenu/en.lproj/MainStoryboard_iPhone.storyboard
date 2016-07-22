@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yzD-f0-X8n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Left Menu View Controller-->
+        <scene sceneID="BMU-5d-Lvz">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" id="L46-bH-G45" customClass="LeftMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ck-cx-0Lt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VHp-gd-jke" customClass="JKExpandTableView">
+                                <rect key="frame" x="0.0" y="97" width="414" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9en-xF-gq6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="expandTableView" destination="VHp-gd-jke" id="ILz-tZ-TfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uR4-tD-X8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-1087"/>
+        </scene>
+        <!--Slide Navigation Controller-->
+        <scene sceneID="cQY-wH-O5O">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="yzD-f0-X8n" customClass="SlideNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9jY-gB-7xP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rnc-YT-XEu" kind="relationship" relationship="rootViewController" id="Hu2-ne-r2J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qg-wo-U2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="-161"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fe8-Xu-DEa">
+            <objects>
+                <viewController id="Rnc-YT-XEu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qy8-tT-LdF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="e9E-0E-u4L">
+                                <rect key="frame" x="26" y="209" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1li-i4-fu1">
+                                <rect key="frame" x="26" y="302" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YPk-eU-B8V">
+                                <rect key="frame" x="26" y="171" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VtX-MI-T02">
+                                <rect key="frame" x="26" y="264" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mef-jl-wS5">
+                                <rect key="frame" x="26" y="437" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cuv-V2-7db">
+                                <rect key="frame" x="90" y="107" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YXk-JY-bbd">
+                                <rect key="frame" x="164" y="431" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Register Here">
+                                    <color key="titleColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w0t-va-Gly">
+                                <rect key="frame" x="109" y="380" width="63" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NEG-Fw-kO1" kind="push" id="4Jo-vs-bYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="huN-S6-yGa"/>
+                    <connections>
+                        <segue destination="nrg-5w-bbF" kind="push" identifier="FakeSegue" id="Rkp-YM-Gz0"/>
+                        <segue destination="qY1-Jo-UbZ" kind="push" identifier="FakeSegue33" id="37q-Mo-UFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QC9-GK-F3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-175"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="xeE-nX-pb6">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="nrg-5w-bbF" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXC-Mu-u90">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="coh-kj-UCb">
+                                <rect key="frame" x="92" y="178" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push To Another PAge">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BLR-mt-TZ9" kind="push" identifier="RightMenuOnlySegue" id="yr9-GK-Pwl"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="liN-HX-4nb">
+                                <rect key="frame" x="85" y="111" width="151" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="random"/>
+                                    <segment title="?"/>
+                                </segments>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="5Jz-Yy-2WY">
+                                <rect key="frame" x="37" y="260" width="216" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="cIB-4y-aS6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIU-qR-dGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="583"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="Hbs-BS-FvF">
+            <objects>
+                <tableViewController storyboardIdentifier="FriendsViewController" title="Friends" id="qY1-Jo-UbZ" customClass="FriendsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZVX-Ox-mWb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" textLabel="iWQ-vV-pDm" style="IBUITableViewCellStyleDefault" id="iJ3-ci-bMv">
+                                <rect key="frame" x="0.0" y="86" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iJ3-ci-bMv" id="c95-tX-Iz4">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iWQ-vV-pDm">
+                                            <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yDw-XY-MRH" kind="push" id="f0p-1d-Bw3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="qY1-Jo-UbZ" id="1YL-S4-gBv"/>
+                            <outlet property="delegate" destination="qY1-Jo-UbZ" id="FT7-ey-Dka"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aah-ni-z8T">
+                        <barButtonItem key="rightBarButtonItem" title="Random Button" id="UsL-My-2Pu"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeQ-ZL-OLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="1386"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="yJW-sY-3g9">
+            <objects>
+                <viewController title="Friends" id="yDw-XY-MRH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iHZ-lt-TwS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend Info goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYW-yF-XIJ">
+                                <rect key="frame" x="107" y="43" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Friend Info" id="ZvF-si-2WZ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rh-jR-0iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="1386"/>
+        </scene>
+        <!--Right Menu Only-->
+        <scene sceneID="w1a-xD-Zgv">
+            <objects>
+                <viewController storyboardIdentifier="ProfileDetailViewController" id="BLR-mt-TZ9" customClass="ProfileDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pd3-of-ZHU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Right Menu Only" id="YcQ-Z1-05c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoB-W7-tIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="591"/>
+        </scene>
+        <!--RightMenuViewController-->
+        <scene sceneID="4D0-hr-unv">
+            <objects>
+                <viewController storyboardIdentifier="RightMenuViewController" id="CkC-Jl-7gs" userLabel="RightMenuViewController" customClass="RightMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkA-11-xcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rxo-EL-mMo">
+                                <rect key="frame" x="0.0" y="62" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.83529418710000003" green="0.77647066119999997" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CkC-Jl-7gs" id="r1f-eU-lMH"/>
+                                    <outlet property="delegate" destination="CkC-Jl-7gs" id="z1c-4e-B0J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" prompt="               " id="EZR-Mr-AAN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="rxo-EL-mMo" id="coH-OC-YF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgu-27-ZWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-237" y="937"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rKd-el-qFq">
+            <objects>
+                <viewController storyboardIdentifier="MainView" id="NEG-Fw-kO1" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rQ3-d4-N5D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="XIG-iy-tpc">
+                                <rect key="frame" x="0.0" y="18" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96607983109999995" green="0.0" blue="0.83114498849999996" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98485261199999996" green="0.0" blue="0.94597232340000004" alpha="0.92253989359999999" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80080723760000005" green="0.0" blue="0.67362624410000005" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="ePt-dB-eeD"/>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EZ1-Zh-due">
+                                <rect key="frame" x="0.0" y="66" width="414" height="670"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vXU-eC-67L">
+                                    <size key="itemSize" width="70" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="k0v-94-BrB" customClass="HomeCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bdO-kq-Fei" customClass="KTImageView">
+                                                    <rect key="frame" x="10" y="8" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="img_thumb" destination="bdO-kq-Fei" id="lVB-Vo-ZzA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NEG-Fw-kO1" id="He7-qH-KoE"/>
+                                    <outlet property="delegate" destination="NEG-Fw-kO1" id="dtB-sT-qnT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wHg-Tj-rR7"/>
+                    <connections>
+                        <outlet property="collectionview" destination="EZ1-Zh-due" id="ulZ-gt-7PD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ew3-3o-mBB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-338"/>
+        </scene>
+        <!--Home Product List View Controller-->
+        <scene sceneID="HRk-Vb-qDu">
+            <objects>
+                <viewController storyboardIdentifier="homeProductList" id="2Wt-nc-c3k" customClass="homeProductListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aE6-Kb-xPB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="P3w-IF-1gq">
+                                <rect key="frame" x="0.0" y="68" width="414" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Wt-nc-c3k" id="4yE-bP-IRq"/>
+                                    <outlet property="delegate" destination="2Wt-nc-c3k" id="H4U-Cm-qPY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableview" destination="P3w-IF-1gq" id="ilb-AY-zMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKX-I3-J4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="-338"/>
+        </scene>
+        <!--Products List View Controller-->
+        <scene sceneID="m11-Qq-cPh">
+            <objects>
+                <viewController storyboardIdentifier="ProductsListView" id="LXe-a3-xiC" customClass="ProductsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h8r-yx-0Gg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N7Q-yz-oN0">
+                                <rect key="frame" x="0.0" y="89" width="414" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LXe-a3-xiC" id="75t-dd-K2Y"/>
+                                    <outlet property="delegate" destination="LXe-a3-xiC" id="vFC-V4-5vr"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="ZA9-3s-d6p">
+                                <rect key="frame" x="0.0" y="61" width="414" height="52"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSp-NK-Jfo">
+                                        <rect key="frame" x="17" y="16" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                        <state key="normal" image="List Filled-40.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GwL-X0-jdS">
+                                        <rect key="frame" x="60" y="16" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                        <state key="normal" image="Grid Filled-40.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1si-md-TBp">
+                                        <rect key="frame" x="233" y="16" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Descending Sorting-40.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GEi-cy-AkA">
+                                        <rect key="frame" x="312" y="16" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Filled Filter-40.png"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="73t-8C-Tx2">
+                                        <rect key="frame" x="254" y="16" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Sq-eW-UgK">
+                                        <rect key="frame" x="334" y="16" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableview" destination="N7Q-yz-oN0" id="Y4D-M7-DI0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtI-Zz-XNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="-1087"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="LCe-cd-kIu">
+            <objects>
+                <viewController storyboardIdentifier="privacyPolicyViewController" id="GV7-B8-cbo" customClass="privacyPolicyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86X-Cw-SnA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="Y3C-L3-bIZ">
+                                <rect key="frame" x="0.0" y="87" width="414" height="657"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">      PRIVACY POLICY
+
+All the information you enter on our site is confidential. We do not sell your information nor do we share it with anyone. We are a family owned and operated business with the highest degree of integrity. Your information is safe with us. We respect your concern over your right to privacy, for a secure online shopping experience. By visiting any website operated by the association (collectively referred to as the "Site"), you are accepting the practices described in this Privacy Policy.
+
+INFORMATION COLLECTED WHILE SURFING OUR WEBSITE:
+
+The information we capture from users of our site, allows us to personalize and continually improve your online experience, making it easier and more enjoyable. The information we collect is as below :
+
+Automated Information
+We receive and store certain type of information whenever you interact with us.
+For example, like many Web sites, we use "cookies," and we obtain certain types of information when your web browser accesses our site. Cookies are pieces of data your web browser stores on your hard drive to enable our systems to recognize your browser. Most web browsers automatically accept cookies, but most allow you to instruct your browser to prevent the use of cookies. However, if you disable this feature, certain aspects of our site, such as the shopping basket, will not function properly.
+
+Information you share with us
+We receive and store all the information you enter on the site which is automated, or share with us on the call, email and chat.
+For example, when you order from the site, we collect the following information: your name, telephone number, email address, billing information (credit card number, expiry date and billing address), products purchased, and the recipient´s name, address and telephone number.
+
+Note: In some cases, the recipient may be contacted via telephone to schedule delivery. Also, if you register as a member, we request your name, address, phone number, email address and other information as set forth in the membership form. You can choose not to provide certain information, but then you might not be able to take advantage of many of the features of the Site. We use the information that you provide for such purposes as responding to your requests, processing your orders and communicating with you.
+
+Information from Other Sources
+For reasons such as improving personalization of our service, we might receive information about you from other sources and add it to our account information.
+
+Does We Share The Information It Receives?
+
+We do not sell, trade or rent personally identifiable information that visitors submit to our Site. 
+
+We may utilize your personally identifiable information to send you information or materials we think you will find interesting. However, at the time of collection, you will typically have the option of instructing us not to send you additional information or share your personal information with business partners or advertisers. We are not responsible for the privacy policies or practices of our advertisers or business partners and encourages you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any other Web site.
+
+We may use reputable third parties to manage activities available on our Site including Web hosting, database management and order processing and authentication. These parties may have access to personally identifiable information submitted by visitors who participate in those activities. We instructs these third parties to use personally identifiable information only for the specific purpose for which it is collected, and not to sell, market or transfer such information to other entities except as needed to provide the designated services.
+
+How Secure Is Information About Me?
+
+We maintains appropriate safeguards to ensure the security, integrity and privacy of personally identifiable information submitted to our sites, and periodically reviews and updates its security measures in light of current technologies. Unfortunately, no data transmission over the Internet can be guaranteed to be totally secure. Although the we strives to protect your personal information, we cannot ensure or warranty the security of any information you may transmit to us or from our online products and services. Once we do receive your transmission, however, we make our best effort to ensure its security on our systems. We use VeriSign as our SSL (Secure Socket Layer) digital certificate provider, providing our customers the strongest certificate services available. When credit card information is transmitted, industry standard encryption is used.
+
+About Children
+
+We are concerned about the safety of children when they use the Internet. Pursuant to the Children´s Online Protection Act of 1998, the Association will never knowingly request personally identifiable information from anyone under the age of 13 without prior verifiable parental consent.
+
+Links to Third Party and Co-Branded Sites
+
+We may have and continues to establish relationships with other Web sites that allow visitors to the Site to link directly to these third party Web sites. However, we are not responsible for the privacy practices and content of these third party Web sites. When interacting with any third party site, we encourage you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any the third party Web site.</string>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MyJ-Li-Nmm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="detailview" destination="Y3C-L3-bIZ" id="HQL-gV-CLI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSj-Pg-Dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="937"/>
+        </scene>
+        <!--Terms And Conditions View Controller-->
+        <scene sceneID="0zz-Hk-VAc">
+            <objects>
+                <viewController storyboardIdentifier="termsAndConditionsViewController" id="CqF-Yr-CYE" customClass="termsAndConditionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uGh-vS-hQc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="DUg-wT-jJk">
+                                <rect key="frame" x="0.0" y="73" width="414" height="663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">TERMS AND CONDITIONS
+
+ Same day delivery orders can be accepted till 6 pm IST on the date of delivery.
+ Products will be delivered only in the pin codes mentioned in the List of Serviceable Pin codes.
+ We deliver all 365 days of the year (including Sundays and public holidays)
+ We guarantee on date delivery but do not commit any fix time for delivery. Deliveries will be made between 7 am to 9 pm IST on the given date. However, we  do try our best  to fulfill your delivery instructions. Midnight Deliveries will be made between 11:30 PM to 12:30 AM on Mentioned / asked date at an additional  cost.
+ We believe in providing our customer the best quality. To maintain the freshness, flowers, cakes and other perishable products are sourced locally at the  delivery location  and are always hand delivered
+ Delivery will not be redirected/ redelivered to any other address without extra charges. We will attempt delivery of the items only once. In case the delivery is  not executed during the attempt, the customer shall still be charged for the order and no redelivery may be possible. Orders are considered to be executed in  the below cases: 
+
+a.  Recipient not available
+
+b.  Delivery not done due to wrong address.
+
+c.  Wrong phone or Cell or Extension number/ not working/ no reply or not connecting/ reachable and delivery is not done.
+
+d.  Recipient refused the products.
+
+e.  Premises locked.
+
+f.   Delivered the product at the Gate/ Reception/ Neighbor.
+
+ The image displayed in indicative in nature. Actual product may vary in shape or design as per the availability."
+ Images are indicative only. Though we try our level best to deliver as per the image shown, designs may vary &amp; are subject to availability of flowers /  consumables on any  particular day. We reserve the right to substitute the flowers (Including specified color) / other products with equal or higher  value in case of non-availability of the desired  product. No refund/ re-delivery claim in this respect will be entertained.
+ Freshly baked cakes are available only after 10:30am IST. Please do not insist on early morning cake delivery. We do not deliver earlier days cakes  unless insisted by the  customer
+ Courier items: Courier orders would be shipped all over India within 3-4 working days and we cannot commit exact date of delivery for courier  products. No deliveries      possible on Sundays and national holidays.
+ In case of floods/ Heavy Rains/ Bandh/ Riot or any unavoidable circumstances, we reserve the right to reschedule the delivery for another date.
+ On special occasions like Valentines’ Day, the given prices are not applicable. Please check in our website for special prices, products availability  and advance order  restrictions.
+ Prices of items which are subject to MRP restrictions are being sold on the website after adding up costs of our services, delivery and online  transactions cost. The  distribution could not be shown separately due to technical restrictions and are taken to be understood.
+ No change in instructions can be entertained on the date of delivery unless acknowledged and confirmed in writing by our customer support team.
+ Orders once placed cannot be cancelled unless requested 1 working day (before 4 pm.) prior to the delivery date. You can send cancellation request  at cs@sendmygift.com. Cancellation charge of INR 100 per order will apply.
+
+ In case of outsourced gift items, respective brand owners will be responsible for the quality of product.
+
+ Because of the perishable nature of most products and in order to assist us in resolving any complaints quickly and to our mutual satisfaction, we  advise you to make any  complaint within 1 working day of the date of delivery or intended delivery of your purchase.
+ We will not entertain any complaint of any order after 24 hours from the date of delivery of the order.
+ Send my Gift follows a policy of free re-delivery in case of any genuine complaint raised by the buyer. Genuine cases include delivery at wrong  address or date, and/or  delivery of stale perishable items.
+ Delivery of certain branded items may not be possible/delayed under certain un-controllable circumstances such as product not available in the  market or discontinued by  the manufacturer. In such cases, similar product, nearest to the description and price shall be delivered.
+General Disclaimers:
+
+1. Send my Gift retains the right to refuse any order unconditionally.
+
+2. All claims are subject to the jurisdiction of Court at Bangalore, India only.
+
+3. If Send my Gift is unable to deliver your order, then complete refund will be made. We shall not be liable for any other charges, loss of profits, emotional stress or any other liability     etc. caused due to non-delivery.
+
+4. Send my Gift reserves the right to change the price or withdraw any product at any point of time at its own discretion without any notice.
+
+5. Send my Gift has taken every care for the accuracy of the information provided in the website. It has exercised due diligence in providing the latest products/information. However,     Send my Gift or its employees or its affiliates are not responsible for the loss or damage caused to any of the users due to the information inadvertently provided/not provided in         the website.
+
+6. In case of any confusion about the delivery address or in case our delivery boy is unable to locate the address, we reserve the right to call the recipient at the given phone number .
+
+7. All rights are reserved. No portion of this website may be reproduced in any form without the written consent of Send my Gift.
+
+8. Authenticity of information &amp; interest of making payments:
+
+a. The customer promises that the information provided to Send my Gift is true, correct and accurate. The customer also agrees to pay all charges incurred by them and users of      your account and credit cards or other payment mention at prices in effect when such charges are incurred.
+
+b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affiliates harmless from all liabilities &amp; expenses including attorney’s fee related to any violation of this        agreement by them and also for the use of the services or transmission of any message or information by them. Send my Gift may modify this agreement from time to time            without giving any prior information.</string>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kxr-4V-XcQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-DW-41E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="937"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Descending Sorting-40.png" width="40" height="40"/>
+        <image name="Filled Filter-40.png" width="40" height="40"/>
+        <image name="Grid Filled-40.png" width="40" height="40"/>
+        <image name="List Filled-40.png" width="40" height="40"/>
+    </resources>
+</document>
