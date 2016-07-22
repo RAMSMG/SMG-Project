@@ -20,30 +20,25 @@
 
 @implementation ViewController
 @synthesize categories,slideOutAnimationEnabled;
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self.slideOutAnimationEnabled = YES;
+    
+    return [super initWithCoder:aDecoder];
+}
 - (void)viewDidLoad
 {
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"OFFERS" message:@"Currently You Don't Have Any Offers" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    [alertController addAction:ok];
-    
-     alertController.view.tintColor = [UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
-  
-    [self presentViewController:alertController animated:YES completion:nil];
-    
-   
-//  font style
-    
-    for (NSString* family in [UIFont familyNames])
-    {
-        NSLog(@"%@", family);
-        
-        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-        {
-            NSLog(@"  %@", name);
-        }
-    }
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"OFFERS" message:@"Currently You Don't Have Any Offers" preferredStyle:UIAlertControllerStyleAlert];
+//    
+//    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+//    [alertController addAction:ok];
+//    
+//     alertController.view.tintColor = [UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
+//  
+//    [self presentViewController:alertController animated:YES completion:nil];
+//    
     
 	[super viewDidLoad];
     //collection view
@@ -54,11 +49,70 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"SendMyGift";
-   
-    /*navigation bar hiding purpose*/
- [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    
+    id aObj = @[@"One", @"Two"];
+    
+    if ([aObj isKindOfClass:[NSString class]])
+    {
+        NSLog(@"Number of characters : %lu", (unsigned long)((NSString*)aObj).length);
+    }
+    else
+    {
+        NSLog(@"Number of Objects : %lu", (unsigned long)((NSArray*)aObj).count);
+    }
+    
+    categories = [[NSMutableArray alloc] init];
+    
     [self fetchPrimaryData];
 }
+
+
+- (BOOL) shouldSupportMultipleSelectableChildrenAtParentIndex:(NSInteger) parentIndex {
+    if ((parentIndex % 2) == 0) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+- (NSInteger) numberOfParentCells {
+    if (categories.count)
+    {
+        NSLog(@"Blah Blah %lu",(unsigned long)[[self.categories objectAtIndex:0] count]);
+        return [[self.categories objectAtIndex:0] count];
+    }
+    return 0;
+}
+
+- (NSInteger) numberOfChildCellsUnderParentIndex:(NSInteger) parentIndex
+{
+    NSLog(@"A++++++++++++++%@ +++++++++++++++", [categories objectAtIndex:0]);
+    NSLog(@"B-------------%@ ------------", [[categories objectAtIndex:0] objectAtIndex:parentIndex]);
+    NSLog(@"Childs: %lu", [[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] count]);
+    return [[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] count];
+}
+
+- (NSString *) labelForParentCellAtIndex:(NSInteger) parentIndex {
+    NSLog(@"%@",categories);
+    return [[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"category_name"];
+}
+
+- (NSString *) labelForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex {
+    
+    return [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"products"] objectAtIndex:childIndex] valueForKey:@"product_name"];
+}
+
+- (BOOL) shouldDisplaySelectedStateForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex
+{
+    return 0;
+}
+
+- (BOOL) shouldRotateIconForParentOnToggle {
+    return YES;
+}
+
+
+
+
 
 - (void)fetchPrimaryData
 {
@@ -101,13 +155,6 @@
 	
 }
 
-- (BOOL) shouldSupportMultipleSelectableChildrenAtParentIndex:(NSInteger) parentIndex {
-    if ((parentIndex % 2) == 0) {
-        return NO;
-    } else {
-        return YES;
-    }
-}
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 	HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
 	NSString *str = [[arr objectAtIndex:indexPath.row] valueForKey:@"cat_image"];

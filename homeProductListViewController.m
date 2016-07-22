@@ -30,15 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
     return YES;
@@ -50,9 +42,7 @@
 }
 
 - (void)fetchCategoryData
-{
-    
-    produts = [NSMutableArray new];
+{  produts = [NSMutableArray new];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.timeoutIntervalForRequest = 120;
@@ -80,13 +70,14 @@
                 }else{
                     NSLog(@"%@",jsonObject);
                     
-                    arr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
+                    arr =[[jsonObject valueForKey:@"products"]valueForKey:@"category_name"];
                     imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
                     
                     NSLog(@"arr %@,%lu",arr,(unsigned long)arr.count);
+                    
+                    
                     [tableview reloadData];
                     
-                   
                 }
             }
         });
