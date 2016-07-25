@@ -467,6 +467,11 @@
 				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Aryan Ghassemi";
+				TargetAttributes = {
+					15371EDD1728E3B400A508F4 = {
+						DevelopmentTeam = 7Z2NCB4FM8;
+					};
+				};
 			};
 			buildConfigurationList = 15371ED81728E3B400A508F4 /* Build configuration list for PBXProject "SendMyGift" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -687,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/SendMyGift-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/SendMyGift-Info.plist";
@@ -700,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/SendMyGift-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/SendMyGift-Info.plist";
