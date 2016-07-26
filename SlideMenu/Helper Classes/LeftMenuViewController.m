@@ -208,11 +208,12 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
     }
 -(void)homebuttonpressed
 {
-//    UIViewController *myNewVC = [[UIViewController alloc] init];
+//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+//    UIViewController *pdvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"productDetails"];
+//    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
 //    
-//    // do any setup you need for myNewVC
-//    
-////    [self presentModalViewController:myNewVC animated:YES];
-//    [self presentViewController:myNewVC animated:YES completion:nil];
+//    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pdvc
+//                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+//                                                                     andCompletion:nil];
 }
     @end
