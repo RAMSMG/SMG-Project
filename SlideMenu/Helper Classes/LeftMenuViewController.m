@@ -213,11 +213,11 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
     }
 -(void)homebuttonpressed
 {
-    UIViewController *myNewVC = [[UIViewController alloc] init];
-    
-    // do any setup you need for myNewVC
-    
-//    [self presentModalViewController:myNewVC animated:YES];
-    [self presentViewController:myNewVC animated:YES completion:nil];
+//    UIViewController *myNewVC = [[UIViewController alloc] init];
+//    
+//    // do any setup you need for myNewVC
+//    
+////    [self presentModalViewController:myNewVC animated:YES];
+//    [self presentViewController:myNewVC animated:YES completion:nil];
 }
     @end
