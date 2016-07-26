@@ -227,6 +227,7 @@
 				71504D7A1D39028900E0484C /* leftmenuclasses */,
 				15C9AC0E1895A79A006E6F27 /* slidenavclasses */,
 				71504D791D3901E500E0484C /* jktableview */,
+				71504D7C1D3904BC00E0484C /* Homeclasses */,
 				71504D7B1D39039800E0484C /* rightmenuclasses */,
 				15CBD675172A15F900F0C53E /* Helper Classes */,
 				71504D7D1D3905C400E0484C /* storyboards */,
@@ -358,7 +359,6 @@
 		71504D7B1D39039800E0484C /* rightmenuclasses */ = {
 			isa = PBXGroup;
 			children = (
-				71504D7C1D3904BC00E0484C /* Homeclasses */,
 				71F6AF681D31027A009ED9D7 /* logInViewController.h */,
 				71F6AF691D31027A009ED9D7 /* logInViewController.m */,
 				15E7D316190C24E3002EAE3F /* RightMenuViewController.h */,
@@ -387,6 +387,7 @@
 				1858EFF61D1061580002E3AD /* HomeCollectionViewCell.m */,
 			);
 			name = Homeclasses;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		71504D7D1D3905C400E0484C /* storyboards */ = {

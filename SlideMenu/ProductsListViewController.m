@@ -10,7 +10,8 @@
 #define  url_fetch_product_id @"http://www.sendmygift.com/api/products.php?category_id";
 @interface ProductsListViewController ()
 {
-    NSArray *arr,*imagesarray,*productpricearray,*specialpricearray;
+    NSArray *arr,*imagesarray;
+//    *productpricearray,*specialpricearray;
 }
 
 @end
@@ -73,13 +74,13 @@
                     
                    arr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
                     imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
-                    productpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
-                    specialpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
-
+//                    productpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
+//                    specialpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
+//
                     NSLog(@"arr %@,%lu",arr,(unsigned long)arr.count);
-                    NSLog(@"productpricearray %@,%lu",productpricearray,(unsigned long)productpricearray.count);
-                    NSLog(@"specialpricearray %@,%lu",specialpricearray,(unsigned long)specialpricearray.count);
-
+//                    NSLog(@"productpricearray %@,%lu",productpricearray,(unsigned long)productpricearray.count);
+//                    NSLog(@"specialpricearray %@,%lu",specialpricearray,(unsigned long)specialpricearray.count);
+//
 
                     [tableview reloadData];
             
@@ -118,8 +119,8 @@
 {
     UITableViewCell* cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"table"];
     cell.textLabel.text =[arr objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:15.0];
-    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:14.0];
+//    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
     
     
 
