@@ -1,10 +1,10 @@
 //
-//  homeProductListViewController.h
-//  SendMyGift
+//Created by VENKATARAMANA on.
+//  Copyright (c) 2013 VENKATARAMANA. All rights reserved.
 //
-//  Created by sendmygift on 21/07/16.
-//  Copyright © 2016 Aryan Ghassemi. All rights reserved.
-//
+
+
+
 
 #import <UIKit/UIKit.h>
 

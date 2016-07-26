@@ -1,10 +1,10 @@
+
+//Created by VENKATARAMANA on.
+//  Copyright (c) 2013 VENKATARAMANA. All rights reserved.
 //
-//  RightMenuViewController.h
-//  SlideMenu
-//
-//  Created by  Venkataramana on 20/06/16.
-//  Copyright © 2016 Venkataramana. All rights reserved.
-//
+
+
+
 
 #import <UIKit/UIKit.h>
 #import "SlideNavigationContorllerAnimator.h"

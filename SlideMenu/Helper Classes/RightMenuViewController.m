@@ -1,10 +1,11 @@
+
+//Created by VENKATARAMANA on.
+//  Copyright (c) 2013 VENKATARAMANA. All rights reserved.
 //
-//  RightMenuViewController.m
-//  SlideMenu
-//
-//  Created by  Venkataramana on 20/06/16.
-//  Copyright © 2016 Venkataramana. All rights reserved.
-//
+
+
+
+
 
 #import "RightMenuViewController.h"
 #import "privacyPolicyViewController.h"

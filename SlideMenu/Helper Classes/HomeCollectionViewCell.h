@@ -1,10 +1,9 @@
+
+//Created by VENKATARAMANA on.
+//  Copyright (c) 2013 VENKATARAMANA. All rights reserved.
 //
-//  HomeCollectionViewCell.h
-//  APITEST
-//
-//  Created by  Venkataramana on 09/06/16.
-//  Copyright © 2016 Venkataramana. All rights reserved.
-//
+
+
 
 
 #import <UIKit/UIKit.h>
