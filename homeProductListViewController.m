@@ -16,7 +16,8 @@
 
 @implementation homeProductListViewController
 @synthesize tableview, produts,slideOutAnimationEnabled;
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     
     [self fetchCategoryData];
     [super viewDidLoad];
