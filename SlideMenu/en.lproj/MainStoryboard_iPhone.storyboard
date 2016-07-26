@@ -395,6 +395,21 @@
             </objects>
             <point key="canvasLocation" x="1434" y="-338"/>
         </scene>
+        <!--Profile Detail View Controller-->
+        <scene sceneID="0Tg-Gw-lEi">
+            <objects>
+                <viewController storyboardIdentifier="productDetails" id="ifd-wb-Xxc" customClass="ProfileDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mYl-2P-NK8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Skx-rX-lqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-890" y="-1080"/>
+        </scene>
         <!--Products List View Controller-->
         <scene sceneID="m11-Qq-cPh">
             <objects>
@@ -404,7 +419,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N7Q-yz-oN0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="ZA9-3s-d6p">

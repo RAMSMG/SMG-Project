@@ -8,11 +8,6 @@
 #import "ProductsListViewController.h"
 #import "LeftMenuViewController.h"
 #import "SlideNavigationController.h"
-#import "SlideNavigationContorllerAnimatorFade.h"
-#import "SlideNavigationContorllerAnimatorSlide.h"
-#import "SlideNavigationContorllerAnimatorScale.h"
-#import "SlideNavigationContorllerAnimatorScaleAndFade.h"
-#import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 #define  url_fetch_category @"http://www.sendmygift.com/api/allcategory.php";
 
 @implementation LeftMenuViewController
@@ -80,13 +75,13 @@
     
 }
 
-//- (UIFont *) fontForParents {
-//    return [UIFont fontWithName:@"OpenSans-Regular" size:18];
-//}
-//
-//- (UIFont *) fontForChildren {
-//    return [UIFont fontWithName:@"OpenSans-Regular" size:13];
-//}
+- (UIFont *) fontForParents {
+    return [UIFont fontWithName:@"OpenSans-Regular" size:18];
+}
+
+- (UIFont *) fontForChildren {
+    return [UIFont fontWithName:@"OpenSans-Regular" size:13];
+}
 
 
 - (NSInteger) numberOfParentCells {

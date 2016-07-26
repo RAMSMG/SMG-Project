@@ -7,6 +7,8 @@
 //
 
 #import "ProductsListViewController.h"
+#import "productDetailsViewController.h"
+#import "SlideNavigationController.h"
 #define  url_fetch_product_id @"http://www.sendmygift.com/api/products.php?category_id";
 @interface ProductsListViewController ()
 {
@@ -40,8 +42,6 @@
 }
 
 #pragma mark fetching data
-
-
 
 - (void)fetchCategoryData
 {  produts = [NSMutableArray new];
@@ -95,20 +95,6 @@
 
 
 #pragma mark - Table view data source
-
-
-
-
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
-}
-
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return YES;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
@@ -138,6 +124,27 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100; //You can set height of cell here.
+}
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    productDetailsViewController *pdvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"productDetails"];
+    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
+    
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pdvc
+                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                     andCompletion:nil];
+
+   
+}
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return YES;
 }
 
 @end
