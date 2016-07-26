@@ -72,7 +72,7 @@
     [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:plvc
                                                              withSlideOutAnimation:self.slideOutAnimationEnabled
                                                                      andCompletion:nil];
-    
+     self.expandTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void) tableView:(UITableView *)tableView didDeselectCellAtChildIndex:(NSInteger) childIndex withInParentCellIndex:(NSInteger) parentIndex
@@ -80,13 +80,13 @@
     
 }
 
-- (UIFont *) fontForParents {
-    return [UIFont fontWithName:@"OpenSans-Regular" size:18];
-}
-
-- (UIFont *) fontForChildren {
-    return [UIFont fontWithName:@"OpenSans-Regular" size:13];
-}
+//- (UIFont *) fontForParents {
+//    return [UIFont fontWithName:@"OpenSans-Regular" size:18];
+//}
+//
+//- (UIFont *) fontForChildren {
+//    return [UIFont fontWithName:@"OpenSans-Regular" size:13];
+//}
 
 
 - (NSInteger) numberOfParentCells {
@@ -213,6 +213,11 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
     }
 -(void)homebuttonpressed
 {
-   
+    UIViewController *myNewVC = [[UIViewController alloc] init];
+    
+    // do any setup you need for myNewVC
+    
+//    [self presentModalViewController:myNewVC animated:YES];
+    [self presentViewController:myNewVC animated:YES completion:nil];
 }
     @end

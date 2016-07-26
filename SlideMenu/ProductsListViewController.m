@@ -119,7 +119,7 @@
 {
     UITableViewCell* cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"table"];
     cell.textLabel.text =[arr objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:14.0];
+    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:12.0];
 //    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
     
     
