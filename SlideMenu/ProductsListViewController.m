@@ -17,7 +17,7 @@
 #define  url_fetch_product_id @"http://www.sendmygift.com/api/products.php?category_id";
 @interface ProductsListViewController ()
 {
-    NSArray *itemarr,*imagesarray,*actualPricearray,*SpecialPricearray;
+    NSArray *itemarr,*imagesarray,*actualPricearray,*SpecialPricearray,*titlearray;
 
 }
 
@@ -83,6 +83,7 @@
                     imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
                   actualPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
                     SpecialPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
+                    titlearray=[[jsonObject valueForKey:@"products"]valueForKey:@"sub_cat_name"];
 
                     NSLog(@"itemarr %@,%lu",itemarr,(unsigned long)itemarr.count);
                     NSLog(@"actualPricearray %@, %lu",actualPricearray,(unsigned long)actualPricearray.count);
