@@ -2,8 +2,10 @@
 //  productDetailsViewController.m
 //  SendMyGift
 //
-//  Created by sendmygift on 26/07/16.
-//  Copyright © 2016 Aryan Ghassemi. All rights reserved.
+//Created by VENKATARAMANA on .
+//  Copyright (c) 2013 VENKATARAMANA. All rights reserved.
+//
+
 //
 
 #import "productDetailsViewController.h"
