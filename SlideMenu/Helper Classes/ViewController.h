@@ -8,6 +8,9 @@
 
 
 #import <UIKit/UIKit.h>
+#import "SlideNavigationController.h"
+#import "homeProductListViewController.h"
+
 
 @interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
 {

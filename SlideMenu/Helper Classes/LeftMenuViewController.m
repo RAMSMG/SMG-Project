@@ -11,8 +11,9 @@
 #define  url_fetch_category @"http://www.sendmygift.com/api/allcategory.php";
 
 @implementation LeftMenuViewController
-@synthesize expandTableView, categories,slideOutAnimationEnabled;
-@synthesize plvc;
+
+@synthesize expandTableView, categories,slideOutAnimationEnabled,plvc;
+
 #pragma mark - UIViewController Methods -
 
 - (id)initWithCoder:(NSCoder *)aDecoder
