@@ -61,21 +61,45 @@
         NSLog(@"Number of Objects : %lu", (unsigned long)((NSArray*)aObj).count);
     }
     
-    
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    hplvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"homeProductList"];
-    
-    thumbnail = [[NSMutableDictionary alloc] init];
+    categories = [[NSMutableArray alloc] init];
     
     [self fetchPrimaryData];
 }
 
-//
-//- (NSString *) labelForParentCellAtIndex:(NSInteger) parentIndex {
-//    NSLog(@"%@",thumbnail);
-//    return [arr  objectAtIndex:index] !=nil  ;
-//}
 
+- (BOOL) shouldSupportMultipleSelectableChildrenAtParentIndex:(NSInteger) parentIndex {
+    if ((parentIndex % 2) == 0) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+- (NSInteger) numberOfParentCells {
+    if (categories.count)
+    {
+        NSLog(@"Blah Blah %lu",(unsigned long)[[self.categories objectAtIndex:0] count]);
+        return [[self.categories objectAtIndex:0] count];
+    }
+    return 0;
+}
+
+- (NSInteger) numberOfChildCellsUnderParentIndex:(NSInteger) parentIndex
+{
+    NSLog(@"A++++++++++++++%@ +++++++++++++++", [categories objectAtIndex:0]);
+    NSLog(@"B-------------%@ ------------", [[categories objectAtIndex:0] objectAtIndex:parentIndex]);
+    NSLog(@"Childs: %lu", [[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] count]);
+    return [[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] count];
+}
+
+- (NSString *) labelForParentCellAtIndex:(NSInteger) parentIndex {
+    NSLog(@"%@",categories);
+    return [[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"category_name"];
+}
+
+- (NSString *) labelForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex {
+    
+    return [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"category_name"] objectAtIndex:childIndex] valueForKey:@"product_name"];
+}
 
 - (BOOL) shouldDisplaySelectedStateForCellAtChildIndex:(NSInteger) childIndex withinParentCellIndex:(NSInteger) parentIndex
 {
@@ -154,7 +178,6 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
     homeProductListViewController *hplvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"homeProductList"];
 //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
-//     hplvc.selectedProductId = [[[[[thumbnail objectAtIndex:0] objectAtIndex:indexPath] valueForKey:@"thumbnail"] objectAtIndex:indexPath] valueForKey:@"cat_id"];
     
     [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:hplvc
                                                              withSlideOutAnimation:self.slideOutAnimationEnabled
