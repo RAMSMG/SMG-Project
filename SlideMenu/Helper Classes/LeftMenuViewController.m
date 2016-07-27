@@ -204,7 +204,7 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
     [lefthome setTitle:@"Home" forState:UIControlStateNormal];
    
     [lefthome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
- [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
+// [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
     [oneView addSubview:lefthome];
     //rightbutton
     
@@ -218,5 +218,6 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
 //    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pdvc
 //                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
 //                                                                     andCompletion:nil];
+    NSLog(@"home button pressed");
 }
     @end
