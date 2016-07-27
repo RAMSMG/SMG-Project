@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "JKExpandTableView.h"
 #import "SlideNavigationController.h"
+#import "ProductsListViewController.h"
 
 @interface LeftMenuViewController : UIViewController <JKExpandTableViewDelegate, JKExpandTableViewDataSource>
 
 {
     UIButton *navButton;
 }
+@property (nonatomic, strong) ProductsListViewController *plvc;
 @property (weak, nonatomic) IBOutlet JKExpandTableView *expandTableView;
 @property (nonatomic, strong) NSMutableArray *categories;
 //@property (nonatomic, strong) NSMutableArray *catArray;

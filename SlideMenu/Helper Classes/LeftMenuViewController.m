@@ -12,6 +12,7 @@
 
 @implementation LeftMenuViewController
 @synthesize expandTableView, categories,slideOutAnimationEnabled;
+@synthesize plvc;
 #pragma mark - UIViewController Methods -
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -25,7 +26,6 @@
 {
     [self.navigationController.navigationBar setHidden:NO];
     [super viewDidLoad];
-    
        [self topview];
     
       id aObj = @[@"One", @"Two"];
@@ -38,6 +38,9 @@
     {
         NSLog(@"Number of Objects : %lu", (unsigned long)((NSArray*)aObj).count);
     }
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+     plvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"ProductsListView"];
     
     categories = [[NSMutableArray alloc] init];
     [self fetchCategoryData];
@@ -60,13 +63,13 @@
 {
     NSLog(@"%@", [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"]);
     
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    ProductsListViewController *plvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"ProductsListView"];
     plvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
     
     [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:plvc
                                                              withSlideOutAnimation:self.slideOutAnimationEnabled
-                                                                     andCompletion:nil];
+                                                                     andCompletion:^{
+                                                                         [plvc fetchCategoryData];
+                                                                     }];
      self.expandTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 

@@ -4,16 +4,19 @@
 //
 //  Created by apple on 14/07/16.
 //  Copyright © 2016 Aryan Ghassemi. All rights reserved.
+//#CF0A8B#//
 //
 
 #import "ProductsListViewController.h"
 #import "productDetailsViewController.h"
 #import "SlideNavigationController.h"
+#import "ProductCell.h"
+
 #define  url_fetch_product_id @"http://www.sendmygift.com/api/products.php?category_id";
 @interface ProductsListViewController ()
 {
-    NSArray *arr,*imagesarray;
-//    *productpricearray,*specialpricearray;
+    NSArray *itemarr,*imagesarray,*actualPricearray,*SpecialPricearray;
+
 }
 
 @end
@@ -31,21 +34,23 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"SendMyGift";
 }
+
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self fetchCategoryData];
+//    [self fetchCategoryData];
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 
 #pragma mark fetching data
 
 - (void)fetchCategoryData
-{  produts = [NSMutableArray new];
-    
+{
+    produts = [NSMutableArray new];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.timeoutIntervalForRequest = 120;
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
@@ -72,15 +77,15 @@
                 }else{
                     NSLog(@"%@",jsonObject);
                     
-                   arr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
+                   itemarr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
                     imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
-//                    productpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
-//                    specialpricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
-//
-                    NSLog(@"arr %@,%lu",arr,(unsigned long)arr.count);
-//                    NSLog(@"productpricearray %@,%lu",productpricearray,(unsigned long)productpricearray.count);
-//                    NSLog(@"specialpricearray %@,%lu",specialpricearray,(unsigned long)specialpricearray.count);
-//
+                  actualPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
+                    SpecialPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
+
+                    NSLog(@"itemarr %@,%lu",itemarr,(unsigned long)itemarr.count);
+                    NSLog(@"actualPricearray %@, %lu",actualPricearray,(unsigned long)actualPricearray.count);
+                    NSLog(@"specialpricearray %@,%lu",SpecialPricearray,(unsigned long)SpecialPricearray.count);
+
 
                     [tableview reloadData];
             
@@ -98,33 +103,42 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    return arr.count;
+    return itemarr.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 
 {
-    UITableViewCell* cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"table"];
-    cell.textLabel.text =[arr objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:12.0];
+    ProductCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    [cell.btnWishList addTarget:self action:@selector(addToWishList:) forControlEvents:UIControlEventTouchUpInside];
+    
+    cell.itemName.text =[itemarr objectAtIndex:indexPath.row];
+    cell.itemName.font = [UIFont fontWithName:@"OpenSans" size:14.0];
+    cell.actualPrice.text = [actualPricearray objectAtIndex:indexPath.row];
+    cell.actualPrice.font = [UIFont fontWithName:@"OpenSans" size:11.0];
+    cell.specialPrice.text = [SpecialPricearray objectAtIndex:indexPath.row];
+    cell.specialPrice.font = [UIFont fontWithName:@"OpenSans" size:13.0];
 //    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
     
     
 
     NSString *imageUrlString = [imagesarray objectAtIndex:indexPath.row];
+    
     NSURL *url = [NSURL URLWithString:imageUrlString];
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
-    cell.imageView.image = image;
+    cell.itemImage.image = image;
     
     
     
     return  cell;
     
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100; //You can set height of cell here.
 }
+
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
@@ -137,6 +151,12 @@
 
    
 }
+
+- (void)addToWishList: (UIButton*)clickedButton
+{
+    NSLog(@"Button clicked to add to wishlist");
+}
+
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
     return YES;

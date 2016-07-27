@@ -37,6 +37,7 @@
 		1858EFF91D1061580002E3AD /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858EFF61D1061580002E3AD /* HomeCollectionViewCell.m */; };
 		1858EFFA1D1061580002E3AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858EFF81D1061580002E3AD /* ViewController.m */; };
 		1858EFFD1D1062320002E3AD /* KTImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858EFFC1D1062320002E3AD /* KTImageView.m */; };
+		18D060321D48670100B134F8 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D060311D48670100B134F8 /* ProductCell.m */; };
 		36F5ABA51D2D7D98004BA400 /* privacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F5ABA41D2D7D98004BA400 /* privacyPolicyViewController.m */; };
 		7105AADA1D2E39A7000DE51C /* JKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AACD1D2E39A7000DE51C /* JKAppDelegate.m */; };
 		7105AADB1D2E39A7000DE51C /* JKExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AACF1D2E39A7000DE51C /* JKExpandTableView.m */; };
@@ -45,6 +46,7 @@
 		7105AADE1D2E39A7000DE51C /* JKSingleSelectSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD51D2E39A7000DE51C /* JKSingleSelectSubTableViewCell.m */; };
 		7105AADF1D2E39A7000DE51C /* JKSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD71D2E39A7000DE51C /* JKSubTableViewCell.m */; };
 		7105AAE01D2E39A7000DE51C /* JKSubTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */; };
+		713F75731D48881F00BC3F45 /* wishlist40.png in Resources */ = {isa = PBXBuildFile; fileRef = 713F75721D48881F00BC3F45 /* wishlist40.png */; };
 		71409EC41D34CA9A008ED2FE /* termsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */; };
 		71520E561D37540F0007253E /* overFlowMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E541D37540F0007253E /* overFlowMenu.png */; };
 		71520E571D37540F0007253E /* overFlowMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E551D37540F0007253E /* overFlowMenu@2x.png */; };
@@ -127,6 +129,8 @@
 		1858EFF81D1061580002E3AD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "SlideMenu/Helper Classes/ViewController.m"; sourceTree = "<group>"; };
 		1858EFFB1D1062320002E3AD /* KTImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTImageView.h; path = "SlideMenu/Helper Classes/KTImageView.h"; sourceTree = "<group>"; };
 		1858EFFC1D1062320002E3AD /* KTImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTImageView.m; path = "SlideMenu/Helper Classes/KTImageView.m"; sourceTree = "<group>"; };
+		18D060301D48670100B134F8 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		18D060311D48670100B134F8 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		36F5ABA31D2D7D98004BA400 /* privacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privacyPolicyViewController.h; sourceTree = "<group>"; };
 		36F5ABA41D2D7D98004BA400 /* privacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = privacyPolicyViewController.m; sourceTree = "<group>"; };
 		7105AACC1D2E39A7000DE51C /* JKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKAppDelegate.h; path = "SlideMenu/Helper Classes/JKAppDelegate.h"; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		7105AAD71D2E39A7000DE51C /* JKSubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSubTableViewCell.m; path = "SlideMenu/Helper Classes/JKSubTableViewCell.m"; sourceTree = "<group>"; };
 		7105AAD81D2E39A7000DE51C /* JKSubTableViewCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSubTableViewCellCell.h; path = "SlideMenu/Helper Classes/JKSubTableViewCellCell.h"; sourceTree = "<group>"; };
 		7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSubTableViewCellCell.m; path = "SlideMenu/Helper Classes/JKSubTableViewCellCell.m"; sourceTree = "<group>"; };
+		713F75721D48881F00BC3F45 /* wishlist40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishlist40.png; sourceTree = "<group>"; };
 		71409EC21D34CA9A008ED2FE /* termsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = termsAndConditionsViewController.h; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.h"; sourceTree = "<group>"; };
 		71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = termsAndConditionsViewController.m; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.m"; sourceTree = "<group>"; };
 		71520E541D37540F0007253E /* overFlowMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overFlowMenu.png; path = SlideMenu/Images/overFlowMenu.png; sourceTree = "<group>"; };
@@ -356,6 +361,8 @@
 				184A29261D3727E40015E093 /* ProductsListViewController.m */,
 				71ADB4351D475B2F00DA13B8 /* productDetailsViewController.h */,
 				71ADB4361D475B2F00DA13B8 /* productDetailsViewController.m */,
+				18D060301D48670100B134F8 /* ProductCell.h */,
+				18D060311D48670100B134F8 /* ProductCell.m */,
 			);
 			name = leftmenuclasses;
 			path = ..;
@@ -408,6 +415,7 @@
 		7160851D1D3DF09600F4AFE3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				713F75721D48881F00BC3F45 /* wishlist40.png */,
 				716085191D3DECEA00F4AFE3 /* Descending Sorting-40.png */,
 				7160851B1D3DECF100F4AFE3 /* Filled Filter-40.png */,
 				716085131D3DEAE700F4AFE3 /* List Filled.png */,
@@ -518,6 +526,7 @@
 				716085181D3DEB6700F4AFE3 /* List Filled-40.png in Resources */,
 				71520E5A1D3754F00007253E /* arrow-icon.png in Resources */,
 				71FBE3641D379B9B007DC9DA /* homegift.png in Resources */,
+				713F75731D48881F00BC3F45 /* wishlist40.png in Resources */,
 				71520E571D37540F0007253E /* overFlowMenu@2x.png in Resources */,
 				7160851A1D3DECEA00F4AFE3 /* Descending Sorting-40.png in Resources */,
 			);
@@ -572,6 +581,7 @@
 				71C76D741D4099EE0048994C /* homeProductListViewController.m in Sources */,
 				7105AAE01D2E39A7000DE51C /* JKSubTableViewCellCell.m in Sources */,
 				7105AADB1D2E39A7000DE51C /* JKExpandTableView.m in Sources */,
+				18D060321D48670100B134F8 /* ProductCell.m in Sources */,
 				997929E2187336AA00716C77 /* FriendsViewController.m in Sources */,
 				36F5ABA51D2D7D98004BA400 /* privacyPolicyViewController.m in Sources */,
 				1858EFFA1D1061580002E3AD /* ViewController.m in Sources */,

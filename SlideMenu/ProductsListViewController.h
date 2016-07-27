@@ -15,4 +15,5 @@
 @property (nonatomic, strong) NSString* selectedProductId;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic, assign) BOOL slideOutAnimationEnabled;
+- (void)fetchCategoryData;
 @end

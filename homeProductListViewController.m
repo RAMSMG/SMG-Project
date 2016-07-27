@@ -43,7 +43,9 @@
 }
 
 - (void)fetchCategoryData
-{  produts = [NSMutableArray new];
+{
+    
+    produts = [NSMutableArray new];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.timeoutIntervalForRequest = 120;
