@@ -47,6 +47,7 @@
 		7105AADF1D2E39A7000DE51C /* JKSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD71D2E39A7000DE51C /* JKSubTableViewCell.m */; };
 		7105AAE01D2E39A7000DE51C /* JKSubTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */; };
 		713F75731D48881F00BC3F45 /* wishlist40.png in Resources */ = {isa = PBXBuildFile; fileRef = 713F75721D48881F00BC3F45 /* wishlist40.png */; };
+		713F75751D48907500BC3F45 /* wishlistfilled.png in Resources */ = {isa = PBXBuildFile; fileRef = 713F75741D48907500BC3F45 /* wishlistfilled.png */; };
 		71409EC41D34CA9A008ED2FE /* termsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */; };
 		71520E561D37540F0007253E /* overFlowMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E541D37540F0007253E /* overFlowMenu.png */; };
 		71520E571D37540F0007253E /* overFlowMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E551D37540F0007253E /* overFlowMenu@2x.png */; };
@@ -148,6 +149,7 @@
 		7105AAD81D2E39A7000DE51C /* JKSubTableViewCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSubTableViewCellCell.h; path = "SlideMenu/Helper Classes/JKSubTableViewCellCell.h"; sourceTree = "<group>"; };
 		7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSubTableViewCellCell.m; path = "SlideMenu/Helper Classes/JKSubTableViewCellCell.m"; sourceTree = "<group>"; };
 		713F75721D48881F00BC3F45 /* wishlist40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishlist40.png; sourceTree = "<group>"; };
+		713F75741D48907500BC3F45 /* wishlistfilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishlistfilled.png; sourceTree = "<group>"; };
 		71409EC21D34CA9A008ED2FE /* termsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = termsAndConditionsViewController.h; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.h"; sourceTree = "<group>"; };
 		71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = termsAndConditionsViewController.m; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.m"; sourceTree = "<group>"; };
 		71520E541D37540F0007253E /* overFlowMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overFlowMenu.png; path = SlideMenu/Images/overFlowMenu.png; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				713F75721D48881F00BC3F45 /* wishlist40.png */,
+				713F75741D48907500BC3F45 /* wishlistfilled.png */,
 				716085191D3DECEA00F4AFE3 /* Descending Sorting-40.png */,
 				7160851B1D3DECF100F4AFE3 /* Filled Filter-40.png */,
 				716085131D3DEAE700F4AFE3 /* List Filled.png */,
@@ -522,6 +525,7 @@
 				716085141D3DEAE700F4AFE3 /* List Filled.png in Resources */,
 				71FBE36A1D37A0BA007DC9DA /* OpenSans-Regular.ttf in Resources */,
 				71520E5B1D3754F00007253E /* arrow-icon@2x.png in Resources */,
+				713F75751D48907500BC3F45 /* wishlistfilled.png in Resources */,
 				716085161D3DEB6300F4AFE3 /* Grid Filled-40.png in Resources */,
 				716085181D3DEB6700F4AFE3 /* List Filled-40.png in Resources */,
 				71520E5A1D3754F00007253E /* arrow-icon.png in Resources */,
