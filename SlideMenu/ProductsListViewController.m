@@ -112,11 +112,11 @@
     [cell.btnWishList addTarget:self action:@selector(addToWishList:) forControlEvents:UIControlEventTouchUpInside];
     
     cell.itemName.text =[itemarr objectAtIndex:indexPath.row];
-    cell.itemName.font = [UIFont fontWithName:@"OpenSans" size:14.0];
+    cell.itemName.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     cell.actualPrice.text = [actualPricearray objectAtIndex:indexPath.row];
-    cell.actualPrice.font = [UIFont fontWithName:@"OpenSans" size:11.0];
+    cell.actualPrice.font = [UIFont fontWithName:@"OpenSans" size:9.0];
     cell.specialPrice.text = [SpecialPricearray objectAtIndex:indexPath.row];
-    cell.specialPrice.font = [UIFont fontWithName:@"OpenSans" size:13.0];
+    cell.specialPrice.font = [UIFont fontWithName:@"OpenSans" size:12.0];
 //    cell.textLabel.text=[productpricearray objectAtIndex:indexPath.row];
     
     
