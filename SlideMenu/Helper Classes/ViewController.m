@@ -65,7 +65,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
     hplvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"homeProductList"];
     
-    thumbnail = [[NSMutableArray alloc] init];
+    thumbnail = [[NSMutableDictionary alloc] init];
     
     [self fetchPrimaryData];
 }
@@ -154,7 +154,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
     homeProductListViewController *hplvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"homeProductList"];
 //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
-     hplvc.selectedProductId = [[[[[thumbnail objectAtIndex:0] objectAtIndex:indexPath] valueForKey:@"thumbnail"] objectAtIndex:indexPath] valueForKey:@"cat_id"];
+//     hplvc.selectedProductId = [[[[[thumbnail objectAtIndex:0] objectAtIndex:indexPath] valueForKey:@"thumbnail"] objectAtIndex:indexPath] valueForKey:@"cat_id"];
     
     [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:hplvc
                                                              withSlideOutAnimation:self.slideOutAnimationEnabled

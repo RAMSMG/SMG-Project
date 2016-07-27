@@ -80,11 +80,11 @@
 }
 
 - (UIFont *) fontForParents {
-    return [UIFont fontWithName:@"OpenSans-Regular" size:18];
+    return [UIFont fontWithName:@"OpenSans" size:18];
 }
 
 - (UIFont *) fontForChildren {
-    return [UIFont fontWithName:@"OpenSans-Regular" size:13];
+    return [UIFont fontWithName:@"OpenSans" size:13];
 }
 
 
