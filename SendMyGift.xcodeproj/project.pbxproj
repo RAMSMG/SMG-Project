@@ -239,7 +239,6 @@
 				7160851D1D3DF09600F4AFE3 /* images */,
 				71504D7C1D3904BC00E0484C /* Homeclasses */,
 				71504D7A1D39028900E0484C /* leftmenuclasses */,
-				15C9AC0E1895A79A006E6F27 /* slidenavclasses */,
 				71504D791D3901E500E0484C /* jktableview */,
 				71504D7B1D39039800E0484C /* rightmenuclasses */,
 				15CBD675172A15F900F0C53E /* Helper Classes */,
@@ -312,7 +311,7 @@
 				15371F0F1728E3B400A508F4 /* SlideMenuTests */,
 			);
 			name = slidenavclasses;
-			path = Source/Animations;
+			path = SlideMenu/Source/Animations;
 			sourceTree = "<group>";
 		};
 		15CBD675172A15F900F0C53E /* Helper Classes */ = {
@@ -368,6 +367,7 @@
 				184A29261D3727E40015E093 /* ProductsListViewController.m */,
 				71ADB4351D475B2F00DA13B8 /* productDetailsViewController.h */,
 				71ADB4361D475B2F00DA13B8 /* productDetailsViewController.m */,
+				15C9AC0E1895A79A006E6F27 /* slidenavclasses */,
 			);
 			name = leftmenuclasses;
 			path = ..;
