@@ -17,7 +17,7 @@
 @end
 
 @implementation homeProductListViewController
-
+@synthesize tableview, produts,slideOutAnimationEnabled;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,6 +26,56 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)fetchCategoryData
+{
+    produts = [NSMutableArray new];
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    config.timeoutIntervalForRequest = 120;
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
+    NSString *urlStr = [NSString stringWithFormat:@"http://www.sendmygift.com/api/products.php?category_id=%@",self.selectedProductId];
+    
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if (error)
+            {
+                NSLog(@"%@",error.localizedDescription);
+            }
+            else
+            {
+                NSError *err = nil;
+                
+                NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&err];
+                if (error) {
+                    NSLog(@"%@",error.description);
+                    
+                }else{
+                    NSLog(@"%@",jsonObject);
+                    
+                    itemarr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
+                    imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
+                    actualPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
+                    SpecialPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
+//                    titlearray=[[jsonObject valueForKey:@"products"]valueForKey:@"sub_cat_name"];
+                    
+                    NSLog(@"itemarr %@,%lu",itemarr,(unsigned long)itemarr.count);
+                    NSLog(@"actualPricearray %@, %lu",actualPricearray,(unsigned long)actualPricearray.count);
+                    NSLog(@"specialpricearray %@,%lu",SpecialPricearray,(unsigned long)SpecialPricearray.count);
+                    
+                    
+                    [tableview reloadData];
+                    
+                }
+            }
+        });
+    }];
+    [task resume];
 }
 
 #pragma mark - Table view data source

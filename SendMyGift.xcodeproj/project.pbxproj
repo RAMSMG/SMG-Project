@@ -362,10 +362,10 @@
 			children = (
 				15CBD678172A15F900F0C53E /* LeftMenuViewController.h */,
 				15CBD679172A15F900F0C53E /* LeftMenuViewController.m */,
-				184A29251D3727E40015E093 /* ProductsListViewController.h */,
-				184A29261D3727E40015E093 /* ProductsListViewController.m */,
 				18D060301D48670100B134F8 /* ProductCell.h */,
 				18D060311D48670100B134F8 /* ProductCell.m */,
+				184A29251D3727E40015E093 /* ProductsListViewController.h */,
+				184A29261D3727E40015E093 /* ProductsListViewController.m */,
 				71ADB4351D475B2F00DA13B8 /* productDetailsViewController.h */,
 				71ADB4361D475B2F00DA13B8 /* productDetailsViewController.m */,
 			);
