@@ -13,5 +13,7 @@
     UIButton *navButton;
 }
 @property (weak, nonatomic) IBOutlet UITextView *detailview;
+@property (nonatomic, assign) BOOL slideOutAnimationEnabled;
+
 
 @end

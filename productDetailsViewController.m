@@ -19,9 +19,13 @@
 @end
 
 @implementation productDetailsViewController
-@synthesize slideOutAnimationEnabled,selectedProductId,produts;
+@synthesize slideOutAnimationEnabled,selectedProductId,produts,mainImage;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationItem.title = @"SendMyGift";
+
     
        // Do any additional setup after loading the view.
 }
@@ -70,7 +74,7 @@
                     NSLog(@"%@",jsonObject);
                     
                     itemTitlearr =[[jsonObject valueForKey:@"result"]valueForKey:@"name"];
-                    mainImagearray =[[jsonObject valueForKey:@"result"]valueForKey:@"pimg"];
+                    mainImagearray =[[jsonObject valueForKey:@"result"]valueForKey:@"img"];
                     smallImagesarray=[[jsonObject valueForKey:@"result"]valueForKey:@"small_img"];
                     priceLabelarray=[[jsonObject valueForKey:@"result"]valueForKey:@"price"];
 //                    titlearray=[[jsonObject valueForKey:@"result"]valueForKey:@"sub_cat_name"];
@@ -85,5 +89,14 @@
     }];
     [task resume];
 }
-
+//-(void)fetchingData
+//{
+//    dispatch_async(dispatch_queue_create("imageQueue", NULL), ^{
+//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:needs[@"img"]]];
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [mainImage.image setImage:mainImagearray];
+//            
+//        });
+//    });
+//}
 @end

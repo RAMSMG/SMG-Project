@@ -9,6 +9,7 @@
 
 #import "RightMenuViewController.h"
 #import "privacyPolicyViewController.h"
+#import "SlideNavigationController.h"
 @implementation RightMenuViewController
 
 #pragma mark - UIViewController Methods -
@@ -18,7 +19,7 @@
     
     
 	[super viewDidLoad];
-    [self topview];
+//    [self topview];
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     	self.tableView.separatorColor = [UIColor clearColor];
     
@@ -77,26 +78,32 @@
 //    UIViewController * vc = [[UIViewController alloc] init];
     
    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    privacyPolicyViewController *pPvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"privacyPolicy"];
+    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
     
-    NSString * storyboardName = @"MainStoryboard_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"PrivacyPolicy"];
-    [self presentViewController:vc animated:YES completion:nil];
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
+                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                     andCompletion:nil];
+    
+
    }
--(void)topview
-{
-    UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 414, 60)];
-    oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
-    
-    
-    [self.view addSubview:oneView];
-    
+
+//
+//-(void)topview
+//{
+//    UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 414, 60)];
+//    oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
+//    
+//    
+//    [self.view addSubview:oneView];
+//    
 //    UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
 //    addProject.frame = CGRectMake(20, 29, 46, 30);
 //    [addProject setTitle:@"Home" forState:UIControlStateNormal];
 //    [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 //    [addProject addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
 //    [oneView addSubview:addProject];
-}
+//}
 
 @end

@@ -7,23 +7,19 @@
 //
 
 #import "privacyPolicyViewController.h"
-
+#import "SlideNavigationController.h"
 @interface privacyPolicyViewController ()
 
 @end
 
 @implementation privacyPolicyViewController
-
+@synthesize slideOutAnimationEnabled;
 - (void)viewDidLoad
 
 {
-    //*** viewcontroller creating**//
-    UIViewController * vc = [[UIViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
-    
-     //**navigation bar**//
-   
-    //do something like background color, title, etc you self
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationItem.title = @"PRIVACY POLICY";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -35,6 +31,15 @@
 
 
 
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return YES;
+}
 
 
 /*
