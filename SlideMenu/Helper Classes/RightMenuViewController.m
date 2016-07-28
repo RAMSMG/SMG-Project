@@ -73,37 +73,59 @@
     return cell;
    
 }
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+////    UIViewController * vc = [[UIViewController alloc] init];
+//    
+//   
+//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+//    privacyPolicyViewController *pPvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"privacyPolicy"];
+//    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
+//    
+//    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
+//                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+//                                                                     andCompletion:nil];
+//    
+//
+//   }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    UIViewController * vc = [[UIViewController alloc] init];
-    
-   
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    privacyPolicyViewController *pPvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"privacyPolicy"];
-    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
-    
-    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
-                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
-                                                                     andCompletion:nil];
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    UIViewController *pPvc = nil;
+    switch (indexPath.row) {
+        case 0:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"My Order"];
+            break;
+        case 1:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"My Wishlist"];
+            break;
+        case 2:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Log Out"];
+            break;
+            
+        case 3:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"privacyPolicy"];
+            break;
+        case 4:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Terms & Conditions"];
+            break;
+        case 5:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Contact Us"];
+            break;
+            
+        default:
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Rate App"];
+            break;
 
-   }
+            
+            
+    }
+//    [[self navigationController] pushViewController:viewController animated:YES];
+    
+        [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
+                                                                 withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                         andCompletion:nil];
 
-//
-//-(void)topview
-//{
-//    UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 414, 60)];
-//    oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
-//    
-//    
-//    [self.view addSubview:oneView];
-//    
-//    UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-//    addProject.frame = CGRectMake(20, 29, 46, 30);
-//    [addProject setTitle:@"Home" forState:UIControlStateNormal];
-//    [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [addProject addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
-//    [oneView addSubview:addProject];
-//}
-
+}
 @end

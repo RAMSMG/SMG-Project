@@ -510,18 +510,18 @@ We may have and continues to establish relationships with other Web sites that a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSj-Pg-Dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813" y="631"/>
+            <point key="canvasLocation" x="825" y="614"/>
         </scene>
         <!--Terms And Conditions View Controller-->
         <scene sceneID="0zz-Hk-VAc">
             <objects>
-                <viewController storyboardIdentifier="termsAndConditionsViewController" id="CqF-Yr-CYE" customClass="termsAndConditionsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terms &amp; Conditions" id="CqF-Yr-CYE" customClass="termsAndConditionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uGh-vS-hQc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="DUg-wT-jJk">
-                                <rect key="frame" x="0.0" y="73" width="414" height="663"/>
+                                <rect key="frame" x="0.0" y="57" width="414" height="679"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">TERMS AND CONDITIONS
