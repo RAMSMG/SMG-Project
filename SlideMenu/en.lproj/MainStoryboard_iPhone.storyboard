@@ -12,6 +12,7 @@
             <string>OpenSans</string>
             <string>OpenSans</string>
             <string>OpenSans</string>
+            <string>OpenSans</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -456,7 +457,7 @@
                                 <rect key="frame" x="13" y="38" width="381" height="706"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">      
+                                <string key="text">      
 
 All the information you enter on our site is confidential. We do not sell your information nor do we share it with anyone. We are a family owned and operated business with the highest degree of integrity. Your information is safe with us. We respect your concern over your right to privacy, for a secure online shopping experience. By visiting any website operated by the association (collectively referred to as the "Site"), you are accepting the practices described in this Privacy Policy.
 
@@ -495,7 +496,7 @@ We are concerned about the safety of children when they use the Internet. Pursua
 
 Links to Third Party and Co-Branded Sites
 
-We may have and continues to establish relationships with other Web sites that allow visitors to the Site to link directly to these third party Web sites. However, we are not responsible for the privacy practices and content of these third party Web sites. When interacting with any third party site, we encourage you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any the third party Web site.</mutableString>
+We may have and continues to establish relationships with other Web sites that allow visitors to the Site to link directly to these third party Web sites. However, we are not responsible for the privacy practices and content of these third party Web sites. When interacting with any third party site, we encourage you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any the third party Web site.</string>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                             </textView>
@@ -521,10 +522,10 @@ We may have and continues to establish relationships with other Web sites that a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="DUg-wT-jJk">
-                                <rect key="frame" x="0.0" y="57" width="414" height="679"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="10" y="57" width="395" height="679"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">TERMS AND CONDITIONS
+                                <mutableString key="text">
 
  Same day delivery orders can be accepted till 6 pm IST on the date of delivery.
  Products will be delivered only in the pin codes mentioned in the List of Serviceable Pin codes.
@@ -532,10 +533,9 @@ We may have and continues to establish relationships with other Web sites that a
  We guarantee on date delivery but do not commit any fix time for delivery. Deliveries will be made between 7 am to 9 pm IST on the given date. However, we  do try our best  to fulfill your delivery instructions. Midnight Deliveries will be made between 11:30 PM to 12:30 AM on Mentioned / asked date at an additional  cost.
  We believe in providing our customer the best quality. To maintain the freshness, flowers, cakes and other perishable products are sourced locally at the  delivery location  and are always hand delivered
  Delivery will not be redirected/ redelivered to any other address without extra charges. We will attempt delivery of the items only once. In case the delivery is  not executed during the attempt, the customer shall still be charged for the order and no redelivery may be possible. Orders are considered to be executed in  the below cases: 
+ a. Recipient not available
 
-a.  Recipient not available
-
-b.  Delivery not done due to wrong address.
+b.Delivery not done due to wrong address.
 
 c.  Wrong phone or Cell or Extension number/ not working/ no reply or not connecting/ reachable and delivery is not done.
 
@@ -581,9 +581,8 @@ General Disclaimers:
 
 a. The customer promises that the information provided to Send my Gift is true, correct and accurate. The customer also agrees to pay all charges incurred by them and users of      your account and credit cards or other payment mention at prices in effect when such charges are incurred.
 
-b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affiliates harmless from all liabilities &amp; expenses including attorney’s fee related to any violation of this        agreement by them and also for the use of the services or transmission of any message or information by them. Send my Gift may modify this agreement from time to time            without giving any prior information.</string>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affiliates harmless from all liabilities &amp; expenses including attorney’s fee related to any violation of this        agreement by them and also for the use of the services or transmission of any message or information by them. Send my Gift may modify this agreement from time to time            without giving any prior information.</mutableString>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -594,7 +593,7 @@ b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affil
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-DW-41E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255" y="631"/>
+            <point key="canvasLocation" x="1267" y="614"/>
         </scene>
     </scenes>
     <resources>

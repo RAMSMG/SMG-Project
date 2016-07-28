@@ -9,6 +9,7 @@
 
 #import "RightMenuViewController.h"
 #import "privacyPolicyViewController.h"
+#import "termsAndConditionsViewController.h"
 #import "SlideNavigationController.h"
 @implementation RightMenuViewController
 
