@@ -27,7 +27,7 @@
 {
     [self.navigationController.navigationBar setHidden:NO];
     [super viewDidLoad];
-       [self topview];
+//       [self topview];
     
       id aObj = @[@"One", @"Two"];
     
@@ -190,7 +190,7 @@
 
 #pragma mark uiview
 
--(void)topview
+/*-(void)topview
 {
 UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
     oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
@@ -221,4 +221,6 @@ UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
 //                                                                     andCompletion:nil];
     NSLog(@"home button pressed");
 }
+ */
+
     @end
