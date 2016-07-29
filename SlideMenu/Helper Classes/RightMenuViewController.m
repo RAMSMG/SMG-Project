@@ -24,7 +24,7 @@
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     	self.tableView.separatorColor = [UIColor clearColor];
     
- downlist=@[@"My Order",@"My Wishlist",@"Log Out",@"Privacy Policy",@"Terms & Conditions",@"Contact Us",@"Rate App"];
+ downlist=@[@"My Order",@"My Wishlist",@"Log In",@"Privacy Policy",@"Terms & Conditions",@"Contact Us",@"Rate App"];
 	
 //	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rightMenu.jpg"]];
 //	self.tableView.backgroundView = imageView;
@@ -85,7 +85,7 @@
             pPvc = [storyboard instantiateViewControllerWithIdentifier:@"My Wishlist"];
             break;
         case 2:
-            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Log Out"];
+            pPvc = [storyboard instantiateViewControllerWithIdentifier:@"Log In"];
             break;
             
         case 3:
