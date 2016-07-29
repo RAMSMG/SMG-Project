@@ -48,7 +48,7 @@
 		7105AAE01D2E39A7000DE51C /* JKSubTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */; };
 		713F75731D48881F00BC3F45 /* wishlist40.png in Resources */ = {isa = PBXBuildFile; fileRef = 713F75721D48881F00BC3F45 /* wishlist40.png */; };
 		713F75751D48907500BC3F45 /* wishlistfilled.png in Resources */ = {isa = PBXBuildFile; fileRef = 713F75741D48907500BC3F45 /* wishlistfilled.png */; };
-		71409EC41D34CA9A008ED2FE /* termsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */; };
+		714FFF3B1D4B2901002CC707 /* termsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714FFF3A1D4B2901002CC707 /* termsAndConditionsViewController.m */; };
 		71520E561D37540F0007253E /* overFlowMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E541D37540F0007253E /* overFlowMenu.png */; };
 		71520E571D37540F0007253E /* overFlowMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E551D37540F0007253E /* overFlowMenu@2x.png */; };
 		71520E5A1D3754F00007253E /* arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71520E581D3754F00007253E /* arrow-icon.png */; };
@@ -66,7 +66,6 @@
 		71FBE36A1D37A0BA007DC9DA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71FBE3691D37A0BA007DC9DA /* OpenSans-Regular.ttf */; };
 		71FD691A1D48B4B800B04D19 /* homeProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD69191D48B4B800B04D19 /* homeProductListViewController.m */; };
 		71FD69201D48BA1300B04D19 /* homeProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD691F1D48BA1300B04D19 /* homeProductCell.m */; };
-		997929E2187336AA00716C77 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997929E1187336AA00716C77 /* FriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,8 +150,8 @@
 		7105AAD91D2E39A7000DE51C /* JKSubTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSubTableViewCellCell.m; path = "SlideMenu/Helper Classes/JKSubTableViewCellCell.m"; sourceTree = "<group>"; };
 		713F75721D48881F00BC3F45 /* wishlist40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishlist40.png; sourceTree = "<group>"; };
 		713F75741D48907500BC3F45 /* wishlistfilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishlistfilled.png; sourceTree = "<group>"; };
-		71409EC21D34CA9A008ED2FE /* termsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = termsAndConditionsViewController.h; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.h"; sourceTree = "<group>"; };
-		71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = termsAndConditionsViewController.m; path = "SlideMenu/Helper Classes/termsAndConditionsViewController.m"; sourceTree = "<group>"; };
+		714FFF391D4B2901002CC707 /* termsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = termsAndConditionsViewController.h; sourceTree = "<group>"; };
+		714FFF3A1D4B2901002CC707 /* termsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = termsAndConditionsViewController.m; sourceTree = "<group>"; };
 		71520E541D37540F0007253E /* overFlowMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overFlowMenu.png; path = SlideMenu/Images/overFlowMenu.png; sourceTree = "<group>"; };
 		71520E551D37540F0007253E /* overFlowMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overFlowMenu@2x.png"; path = "SlideMenu/Images/overFlowMenu@2x.png"; sourceTree = "<group>"; };
 		71520E581D3754F00007253E /* arrow-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-icon.png"; path = "SlideMenu/Images/arrow-icon.png"; sourceTree = "<group>"; };
@@ -174,8 +173,6 @@
 		71FD69191D48B4B800B04D19 /* homeProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeProductListViewController.m; sourceTree = "<group>"; };
 		71FD691E1D48BA1300B04D19 /* homeProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeProductCell.h; sourceTree = "<group>"; };
 		71FD691F1D48BA1300B04D19 /* homeProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeProductCell.m; sourceTree = "<group>"; };
-		997929E0187336AA00716C77 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsViewController.h; path = "SlideMenu/Helper Classes/FriendsViewController.h"; sourceTree = "<group>"; };
-		997929E1187336AA00716C77 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsViewController.m; path = "SlideMenu/Helper Classes/FriendsViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,16 +373,14 @@
 		71504D7B1D39039800E0484C /* rightmenuclasses */ = {
 			isa = PBXGroup;
 			children = (
-				71F6AF681D31027A009ED9D7 /* logInViewController.h */,
-				71F6AF691D31027A009ED9D7 /* logInViewController.m */,
 				15E7D316190C24E3002EAE3F /* RightMenuViewController.h */,
 				15E7D317190C24E3002EAE3F /* RightMenuViewController.m */,
+				71F6AF681D31027A009ED9D7 /* logInViewController.h */,
+				71F6AF691D31027A009ED9D7 /* logInViewController.m */,
 				36F5ABA31D2D7D98004BA400 /* privacyPolicyViewController.h */,
 				36F5ABA41D2D7D98004BA400 /* privacyPolicyViewController.m */,
-				71409EC21D34CA9A008ED2FE /* termsAndConditionsViewController.h */,
-				71409EC31D34CA9A008ED2FE /* termsAndConditionsViewController.m */,
-				997929E0187336AA00716C77 /* FriendsViewController.h */,
-				997929E1187336AA00716C77 /* FriendsViewController.m */,
+				714FFF391D4B2901002CC707 /* termsAndConditionsViewController.h */,
+				714FFF3A1D4B2901002CC707 /* termsAndConditionsViewController.m */,
 			);
 			name = rightmenuclasses;
 			path = ..;
@@ -576,9 +571,9 @@
 				15E7D318190C24E3002EAE3F /* RightMenuViewController.m in Sources */,
 				15C9AC1D1895A81D006E6F27 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				15C9AC171895A7E7006E6F27 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				714FFF3B1D4B2901002CC707 /* termsAndConditionsViewController.m in Sources */,
 				7105AADC1D2E39A7000DE51C /* JKMultiSelectSubTableViewCell.m in Sources */,
 				15371EEF1728E3B400A508F4 /* main.m in Sources */,
-				71409EC41D34CA9A008ED2FE /* termsAndConditionsViewController.m in Sources */,
 				15371EF31728E3B400A508F4 /* AppDelegate.m in Sources */,
 				15C9AC141895A7D7006E6F27 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				15371F281728E44E00A508F4 /* SlideNavigationController.m in Sources */,
@@ -590,7 +585,6 @@
 				7105AAE01D2E39A7000DE51C /* JKSubTableViewCellCell.m in Sources */,
 				7105AADB1D2E39A7000DE51C /* JKExpandTableView.m in Sources */,
 				18D060321D48670100B134F8 /* ProductCell.m in Sources */,
-				997929E2187336AA00716C77 /* FriendsViewController.m in Sources */,
 				36F5ABA51D2D7D98004BA400 /* privacyPolicyViewController.m in Sources */,
 				1858EFFA1D1061580002E3AD /* ViewController.m in Sources */,
 				15CBD67D172A15F900F0C53E /* LeftMenuViewController.m in Sources */,

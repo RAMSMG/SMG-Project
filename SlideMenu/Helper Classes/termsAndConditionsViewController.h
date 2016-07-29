@@ -9,5 +9,6 @@
 #import "ViewController.h"
 
 @interface termsAndConditionsViewController : ViewController
+@property (nonatomic, assign) BOOL slideOutAnimationEnabled;
 
 @end

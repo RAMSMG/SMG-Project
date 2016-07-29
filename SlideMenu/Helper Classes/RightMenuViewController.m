@@ -20,7 +20,7 @@
     
     
 	[super viewDidLoad];
-//    [self topview];
+//   [self topview];
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     	self.tableView.separatorColor = [UIColor clearColor];
     
@@ -67,28 +67,11 @@
         cell.textLabel.text = [downlist objectAtIndex:indexPath.row];
        cell.textLabel.textAlignment = NSTextAlignmentRight;
         cell.textLabel.font=[UIFont fontWithName:@"OpenSans-Regular" size:16];
-
-//        cell.detailTextLabel.text = @"Section 0";
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
    
 }
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-////    UIViewController * vc = [[UIViewController alloc] init];
-//    
-//   
-//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-//    privacyPolicyViewController *pPvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"privacyPolicy"];
-//    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
-//    
-//    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
-//                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
-//                                                                     andCompletion:nil];
-//    
-//
-//   }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -125,8 +108,30 @@
 //    [[self navigationController] pushViewController:viewController animated:YES];
     
         [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pPvc
+       
                                                                  withSlideOutAnimation:self.slideOutAnimationEnabled
                                                                          andCompletion:nil];
-
+//    -(void)topview
+//    {
+//        UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
+//        oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
+//        
+//        
+//        [self.view addSubview:oneView];
+//        
+//        
+//        //leftbutton
+//        UIButton *lefthome = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+//        lefthome.frame = CGRectMake(20, 29, 46, 30);
+//        [lefthome setTitle:@"Home" forState:UIControlStateNormal];
+//        
+//        [lefthome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//        // [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
+//        [oneView addSubview:lefthome];
+//        //rightbutton
+//        
+//    }
+//
+//
 }
 @end

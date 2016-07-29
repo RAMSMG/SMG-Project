@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface privacyPolicyViewController : UIViewController
-{
-    UIButton *navButton;
-}
-@property (weak, nonatomic) IBOutlet UITextView *detailview;
+
+//@property (weak, nonatomic) IBOutlet UITextView *detailview;
 @property (nonatomic, assign) BOOL slideOutAnimationEnabled;
 
 

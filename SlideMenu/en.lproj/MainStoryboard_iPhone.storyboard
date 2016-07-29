@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgu-27-ZWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="631"/>
+            <point key="canvasLocation" x="378" y="614"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rKd-el-qFq">
@@ -453,13 +453,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" textAlignment="center" id="Y3C-L3-bIZ">
-                                <rect key="frame" x="13" y="38" width="381" height="706"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="center" selectable="NO" id="Y3C-L3-bIZ">
+                                <rect key="frame" x="13" y="33" width="381" height="708"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">      
-
-All the information you enter on our site is confidential. We do not sell your information nor do we share it with anyone. We are a family owned and operated business with the highest degree of integrity. Your information is safe with us. We respect your concern over your right to privacy, for a secure online shopping experience. By visiting any website operated by the association (collectively referred to as the "Site"), you are accepting the practices described in this Privacy Policy.
+                                <mutableString key="text"> All the information you enter on our site is confidential. We do not sell your information nor do we share it with anyone. We are a family owned and operated business with the highest degree of integrity. Your information is safe with us. We respect your concern over your right to privacy, for a secure online shopping experience. By visiting any website operated by the association (collectively referred to as the "Site"), you are accepting the practices described in this Privacy Policy.
 
 INFORMATION COLLECTED WHILE SURFING OUR WEBSITE:
 
@@ -496,7 +494,7 @@ We are concerned about the safety of children when they use the Internet. Pursua
 
 Links to Third Party and Co-Branded Sites
 
-We may have and continues to establish relationships with other Web sites that allow visitors to the Site to link directly to these third party Web sites. However, we are not responsible for the privacy practices and content of these third party Web sites. When interacting with any third party site, we encourage you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any the third party Web site.</string>
+We may have and continues to establish relationships with other Web sites that allow visitors to the Site to link directly to these third party Web sites. However, we are not responsible for the privacy practices and content of these third party Web sites. When interacting with any third party site, we encourage you to read the posted privacy statement and user terms and conditions whenever interacting with, and prior to providing any personal information to, any the third party Web site.</mutableString>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                             </textView>
@@ -505,9 +503,6 @@ We may have and continues to establish relationships with other Web sites that a
                     </view>
                     <navigationItem key="navigationItem" id="MyJ-Li-Nmm"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="detailview" destination="Y3C-L3-bIZ" id="HQL-gV-CLI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSj-Pg-Dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -522,12 +517,10 @@ We may have and continues to establish relationships with other Web sites that a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="DUg-wT-jJk">
-                                <rect key="frame" x="10" y="57" width="395" height="679"/>
+                                <rect key="frame" x="13" y="33" width="395" height="679"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
-
- Same day delivery orders can be accepted till 6 pm IST on the date of delivery.
+                                <mutableString key="text"> Same day delivery orders can be accepted till 6 pm IST on the date of delivery.
  Products will be delivered only in the pin codes mentioned in the List of Serviceable Pin codes.
  We deliver all 365 days of the year (including Sundays and public holidays)
  We guarantee on date delivery but do not commit any fix time for delivery. Deliveries will be made between 7 am to 9 pm IST on the given date. However, we  do try our best  to fulfill your delivery instructions. Midnight Deliveries will be made between 11:30 PM to 12:30 AM on Mentioned / asked date at an additional  cost.
