@@ -1,26 +1,24 @@
 //
-//  myOrderViewController.m
+//  myWishlistViewController.m
 //  SendMyGift
 //
 //  Created by sendmygift on 29/07/16.
 //  Copyright © 2016 venkataramana. All rights reserved.
 //
 
-#import "myOrderViewController.h"
+#import "myWishlistViewController.h"
 #import "SlideNavigationController.h"
-@interface myOrderViewController ()
+@interface myWishlistViewController ()
 
 @end
 
-@implementation myOrderViewController
+@implementation myWishlistViewController
 
-- (void)viewDidLoad
-{
-    
-    [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.navigationItem.title = @"My Order";
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationItem.title=@"My Wishlist";
     // Do any additional setup after loading the view.
 }
 
@@ -28,6 +26,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - Navigation
 
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
@@ -38,5 +39,4 @@
 {
     return YES;
 }
-
 @end

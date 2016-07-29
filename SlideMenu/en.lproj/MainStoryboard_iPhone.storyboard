@@ -108,7 +108,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgu-27-ZWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-402" y="614"/>
+            <point key="canvasLocation" x="-1165" y="608"/>
+        </scene>
+        <!--My Order View Controller-->
+        <scene sceneID="1Wo-vS-3Ls">
+            <objects>
+                <viewController storyboardIdentifier="My Order" id="EfZ-KP-32Y" customClass="myOrderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TsQ-rM-jLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSS-76-aGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-715" y="608"/>
+        </scene>
+        <!--My Wishlist View Controller-->
+        <scene sceneID="v4K-NG-sgo">
+            <objects>
+                <viewController storyboardIdentifier="My Wishlist" id="2Z6-kD-acW" customClass="myWishlistViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1eZ-3b-H9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j66-Uy-EAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="608"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="z1S-cv-Wlt">
@@ -227,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2v5-dq-t9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="614"/>
+            <point key="canvasLocation" x="195" y="608"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rKd-el-qFq">
@@ -634,7 +664,7 @@ We may have and continues to establish relationships with other Web sites that a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSj-Pg-Dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="614"/>
+            <point key="canvasLocation" x="641" y="608"/>
         </scene>
         <!--Terms And Conditions View Controller-->
         <scene sceneID="0zz-Hk-VAc">
@@ -714,7 +744,37 @@ b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affil
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-DW-41E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="614"/>
+            <point key="canvasLocation" x="1095" y="608"/>
+        </scene>
+        <!--Contact Us View Controller-->
+        <scene sceneID="CF6-qY-LQ9">
+            <objects>
+                <viewController storyboardIdentifier="Contact Us" id="oBq-Of-zJ6" customClass="contactUsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eah-me-Js4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUf-Uh-PKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="608"/>
+        </scene>
+        <!--Rate App View Controller-->
+        <scene sceneID="rTe-HI-yeo">
+            <objects>
+                <viewController storyboardIdentifier="Rate App" id="JUy-30-CUD" customClass="rateAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1c2-1A-gd2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOg-ZX-Lgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="608"/>
         </scene>
     </scenes>
     <resources>

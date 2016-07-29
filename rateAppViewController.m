@@ -1,25 +1,24 @@
 //
-//  myOrderViewController.m
+//  rateAppViewController.m
 //  SendMyGift
 //
 //  Created by sendmygift on 29/07/16.
 //  Copyright © 2016 venkataramana. All rights reserved.
 //
 
-#import "myOrderViewController.h"
+#import "rateAppViewController.h"
 #import "SlideNavigationController.h"
-@interface myOrderViewController ()
+@interface rateAppViewController ()
 
 @end
 
-@implementation myOrderViewController
+@implementation rateAppViewController
 
 - (void)viewDidLoad
 {
-    
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.navigationItem.title = @"My Order";
+    self.navigationItem.title = @"Rate App";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -29,14 +28,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
-}
 
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return YES;
-}
+#pragma mark - Navigation
+
+ - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+ {
+ return YES;
+ }
+ 
+ - (BOOL)slideNavigationControllerShouldDisplayRightMenu
+ {
+ return YES;
+ }
+
 
 @end

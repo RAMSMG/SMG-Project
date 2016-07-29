@@ -1,25 +1,25 @@
 //
-//  myOrderViewController.m
+//  contactUsViewController.m
 //  SendMyGift
 //
 //  Created by sendmygift on 29/07/16.
 //  Copyright © 2016 venkataramana. All rights reserved.
 //
 
-#import "myOrderViewController.h"
+#import "contactUsViewController.h"
 #import "SlideNavigationController.h"
-@interface myOrderViewController ()
+@interface contactUsViewController ()
 
 @end
 
-@implementation myOrderViewController
+@implementation contactUsViewController
 
 - (void)viewDidLoad
 {
-    
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.navigationItem.title = @"My Order";
+    self.navigationItem.title = @"Contact Us";
+ 
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -29,14 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
-}
 
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return YES;
-}
+#pragma mark - Navigation
+
+ - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+ {
+ return YES;
+ }
+ 
+ - (BOOL)slideNavigationControllerShouldDisplayRightMenu
+ {
+ return YES;
+ }
 
 @end

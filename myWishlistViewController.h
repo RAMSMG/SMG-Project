@@ -1,5 +1,5 @@
 //
-//  myOrderViewController.h
+//  myWishlistViewController.h
 //  SendMyGift
 //
 //  Created by sendmygift on 29/07/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface myOrderViewController : UIViewController
-@property (nonatomic, assign) BOOL slideOutAnimationEnabled;
+@interface myWishlistViewController : UIViewController
+@property(nonatomic, assign) BOOL slideOutAnimationEnabled;
 @end
