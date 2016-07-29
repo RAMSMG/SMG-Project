@@ -44,6 +44,8 @@
 		71009E9E1D4B73E8009E1ED6 /* myWishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009E9D1D4B73E8009E1ED6 /* myWishlistViewController.m */; };
 		71009EA11D4B75FC009E1ED6 /* contactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009EA01D4B75FC009E1ED6 /* contactUsViewController.m */; };
 		71009EA41D4B7618009E1ED6 /* rateAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009EA31D4B7618009E1ED6 /* rateAppViewController.m */; };
+		71009EA61D4B7E26009E1ED6 /* Shopping Cart-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 71009EA51D4B7E26009E1ED6 /* Shopping Cart-40.png */; };
+		71009EA81D4B7E2A009E1ED6 /* Search Filled-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 71009EA71D4B7E2A009E1ED6 /* Search Filled-40.png */; };
 		7105AADA1D2E39A7000DE51C /* JKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AACD1D2E39A7000DE51C /* JKAppDelegate.m */; };
 		7105AADB1D2E39A7000DE51C /* JKExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AACF1D2E39A7000DE51C /* JKExpandTableView.m */; };
 		7105AADC1D2E39A7000DE51C /* JKMultiSelectSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105AAD11D2E39A7000DE51C /* JKMultiSelectSubTableViewCell.m */; };
@@ -148,6 +150,8 @@
 		71009EA01D4B75FC009E1ED6 /* contactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contactUsViewController.m; sourceTree = "<group>"; };
 		71009EA21D4B7618009E1ED6 /* rateAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateAppViewController.h; sourceTree = "<group>"; };
 		71009EA31D4B7618009E1ED6 /* rateAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rateAppViewController.m; sourceTree = "<group>"; };
+		71009EA51D4B7E26009E1ED6 /* Shopping Cart-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping Cart-40.png"; sourceTree = "<group>"; };
+		71009EA71D4B7E2A009E1ED6 /* Search Filled-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search Filled-40.png"; sourceTree = "<group>"; };
 		7105AACC1D2E39A7000DE51C /* JKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKAppDelegate.h; path = "SlideMenu/Helper Classes/JKAppDelegate.h"; sourceTree = "<group>"; };
 		7105AACD1D2E39A7000DE51C /* JKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKAppDelegate.m; path = "SlideMenu/Helper Classes/JKAppDelegate.m"; sourceTree = "<group>"; };
 		7105AACE1D2E39A7000DE51C /* JKExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKExpandTableView.h; path = "SlideMenu/Helper Classes/JKExpandTableView.h"; sourceTree = "<group>"; };
@@ -437,6 +441,8 @@
 		7160851D1D3DF09600F4AFE3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				71009EA51D4B7E26009E1ED6 /* Shopping Cart-40.png */,
+				71009EA71D4B7E2A009E1ED6 /* Search Filled-40.png */,
 				713F75721D48881F00BC3F45 /* wishlist40.png */,
 				713F75741D48907500BC3F45 /* wishlistfilled.png */,
 				716085191D3DECEA00F4AFE3 /* Descending Sorting-40.png */,
@@ -533,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71009EA81D4B7E2A009E1ED6 /* Search Filled-40.png in Resources */,
 				15371EED1728E3B400A508F4 /* InfoPlist.strings in Resources */,
 				18109B171D2BEF3000FFA5D1 /* Launch Screen.storyboard in Resources */,
 				15371EFC1728E3B400A508F4 /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -546,6 +553,7 @@
 				71FBE36A1D37A0BA007DC9DA /* OpenSans-Regular.ttf in Resources */,
 				71520E5B1D3754F00007253E /* arrow-icon@2x.png in Resources */,
 				713F75751D48907500BC3F45 /* wishlistfilled.png in Resources */,
+				71009EA61D4B7E26009E1ED6 /* Shopping Cart-40.png in Resources */,
 				716085161D3DEB6300F4AFE3 /* Grid Filled-40.png in Resources */,
 				716085181D3DEB6700F4AFE3 /* List Filled-40.png in Resources */,
 				71520E5A1D3754F00007253E /* arrow-icon.png in Resources */,

@@ -97,6 +97,30 @@
                                     <outlet property="delegate" destination="CkC-Jl-7gs" id="z1c-4e-B0J"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" id="vNl-Pr-3bF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendMyGift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WX0-Oe-yX0">
+                                        <rect key="frame" x="79" y="24" width="94" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c0P-8C-T1S">
+                                        <rect key="frame" x="224" y="25" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" image="Search Filled-40.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DR3-II-NBx">
+                                        <rect key="frame" x="312" y="25" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" image="Shopping Cart-40.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -782,6 +806,8 @@ b. The customer agrees to defend indemnity &amp; hold Send my Gift and its affil
         <image name="Filled Filter-40.png" width="40" height="40"/>
         <image name="Grid Filled-40.png" width="40" height="40"/>
         <image name="List Filled-40.png" width="40" height="40"/>
+        <image name="Search Filled-40.png" width="40" height="40"/>
+        <image name="Shopping Cart-40.png" width="40" height="40"/>
         <image name="wishlist40.png" width="40" height="40"/>
     </resources>
 </document>

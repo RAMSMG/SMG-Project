@@ -20,8 +20,8 @@
     
     
 	[super viewDidLoad];
-//   [self topview];
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+//  [self topview];
+//    [[self navigationController] setNavigationBarHidden:NO animated:YES];
     	self.tableView.separatorColor = [UIColor clearColor];
     
  downlist=@[@"My Order",@"My Wishlist",@"Log In",@"Privacy Policy",@"Terms & Conditions",@"Contact Us",@"Rate App"];
@@ -120,18 +120,18 @@
 //        [self.view addSubview:oneView];
 //        
 //        
-//        //leftbutton
-//        UIButton *lefthome = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-//        lefthome.frame = CGRectMake(20, 29, 46, 30);
-//        [lefthome setTitle:@"Home" forState:UIControlStateNormal];
-//        
-//        [lefthome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        // [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
-//        [oneView addSubview:lefthome];
+////        //leftbutton
+////        UIButton *lefthome = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+////        lefthome.frame = CGRectMake(20, 29, 46, 30);
+////        [lefthome setTitle:@"Home" forState:UIControlStateNormal];
+////        
+////        [lefthome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+////        // [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
+////        [oneView addSubview:lefthome];
 //        //rightbutton
 //        
-//    }
-//
-//
+//   }
+
+
 }
 @end
