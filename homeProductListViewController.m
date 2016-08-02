@@ -20,6 +20,7 @@
 @synthesize tableview, produts,slideOutAnimationEnabled;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self fetchCategoryData];
     // Do any additional setup after loading the view.
 }
 
@@ -58,10 +59,10 @@
                 }else{
                     NSLog(@"%@",jsonObject);
                     
-                    itemarr =[[jsonObject valueForKey:@"products"]valueForKey:@"product_name"];
-                    imagesarray =[[jsonObject valueForKey:@"products"]valueForKey:@"product_image"];
-                    actualPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"product_price"];
-                    SpecialPricearray=[[jsonObject valueForKey:@"products"]valueForKey:@"special_price"];
+                    itemarr =[[jsonObject valueForKey:@"category_name"]valueForKey:@"product_name"];
+                    imagesarray =[[jsonObject valueForKey:@"category_name"]valueForKey:@"product_image"];
+                    actualPricearray=[[jsonObject valueForKey:@"category_name"]valueForKey:@"product_price"];
+                    SpecialPricearray=[[jsonObject valueForKey:@"category_name"]valueForKey:@"special_price"];
 //                    titlearray=[[jsonObject valueForKey:@"products"]valueForKey:@"sub_cat_name"];
                     
                     NSLog(@"itemarr %@,%lu",itemarr,(unsigned long)itemarr.count);
