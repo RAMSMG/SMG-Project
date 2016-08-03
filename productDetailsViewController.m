@@ -25,7 +25,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"SendMyGift";
-
+    [self fetchCategoryData];
     
        // Do any additional setup after loading the view.
 }
@@ -89,14 +89,4 @@
     }];
     [task resume];
 }
-//-(void)fetchingData
-//{
-//    dispatch_async(dispatch_queue_create("imageQueue", NULL), ^{
-//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:needs[@"img"]]];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [mainImage.image setImage:mainImagearray];
-//            
-//        });
-//    });
-//}
 @end

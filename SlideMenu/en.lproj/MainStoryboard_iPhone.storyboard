@@ -289,6 +289,9 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.81176470590000005" green="0.039215686270000001" blue="0.5450980392" alpha="0.92428523939999996" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="ocz-vK-YFv" eventType="touchUpInside" id="bGe-mX-Lfz"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="5km-2P-ajS">
                                 <rect key="frame" x="169" y="187" width="217" height="30"/>
@@ -300,6 +303,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="h08-aa-ubn" id="FUl-8f-Xk1"/>
+                        <outlet property="emailIdTextField" destination="238-SX-QL0" id="PJg-jC-aeg"/>
+                        <outlet property="firstNameTextField" destination="5km-2P-ajS" id="cQX-iG-kXT"/>
+                        <outlet property="lastNameTextField" destination="t8b-3h-P2p" id="ca9-gZ-50f"/>
+                        <outlet property="mobileTextField" destination="z99-7M-8It" id="yGv-Kt-h74"/>
+                        <outlet property="passwordTextField" destination="aM9-8p-EGE" id="qDC-e1-FJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2v5-dq-t9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

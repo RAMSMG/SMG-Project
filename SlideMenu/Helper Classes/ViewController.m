@@ -50,38 +50,13 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"SendMyGift";
     
-    id aObj = @[@"One", @"Two"];
-    
-    if ([aObj isKindOfClass:[NSString class]])
-    {
-        NSLog(@"Number of characters : %lu", (unsigned long)((NSString*)aObj).length);
-    }
-    else
-    {
-        NSLog(@"Number of Objects : %lu", (unsigned long)((NSArray*)aObj).count);
-    }
-    
     categories = [[NSMutableArray alloc] init];
     
     [self fetchPrimaryData];
 }
 
 
-- (BOOL) shouldSupportMultipleSelectableChildrenAtParentIndex:(NSInteger) parentIndex {
-    if ((parentIndex % 2) == 0) {
-        return NO;
-    } else {
-        return YES;
-    }
-}
-- (NSInteger) numberOfParentCells {
-    if (categories.count)
-    {
-        NSLog(@"Blah Blah %lu",(unsigned long)[[self.categories objectAtIndex:0] count]);
-        return [[self.categories objectAtIndex:0] count];
-    }
-    return 0;
-}
+
 
 - (NSInteger) numberOfChildCellsUnderParentIndex:(NSInteger) parentIndex
 {
@@ -109,11 +84,6 @@
 - (BOOL) shouldRotateIconForParentOnToggle {
     return YES;
 }
-
-
-
-
-
 - (void)fetchPrimaryData
 {
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
