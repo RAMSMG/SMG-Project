@@ -30,7 +30,9 @@
        // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -78,7 +80,6 @@
                     smallImagesarray=[[jsonObject valueForKey:@"result"]valueForKey:@"small_img"];
                     priceLabelarray=[[jsonObject valueForKey:@"result"]valueForKey:@"price"];
 //                    titlearray=[[jsonObject valueForKey:@"result"]valueForKey:@"sub_cat_name"];
-                    
                     NSLog(@"itemTitlearr %@,%lu",itemTitlearr,(unsigned long)itemTitlearr.count);
                     NSLog(@"mainImagearray %@, %lu",mainImagearray,(unsigned long)mainImagearray.count);
                     NSLog(@"smallImagesarray %@,%lu",smallImagesarray,(unsigned long)smallImagesarray.count);
@@ -89,4 +90,5 @@
     }];
     [task resume];
 }
+
 @end
