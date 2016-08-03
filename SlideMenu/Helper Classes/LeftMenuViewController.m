@@ -88,7 +88,8 @@
 }
 
 
-- (NSInteger) numberOfParentCells {
+- (NSInteger) numberOfParentCells
+{
     if (categories.count)
     {
         NSLog(@"Blah Blah %lu",(unsigned long)[[self.categories objectAtIndex:0] count]);
@@ -175,9 +176,6 @@
     [task resume];
 }
 
-
-
-
 -(BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
     return YES;
@@ -187,40 +185,5 @@
 {
     return YES;
 }
-
-#pragma mark uiview
-
-/*-(void)topview
-{
-UIView *oneView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
-    oneView.backgroundColor=[UIColor colorWithRed:207.0/255.0f green:10.0/255.0f blue:139.0/255.0f alpha:1.0];
-
-
-[self.view addSubview:oneView];
-    
-    
-    //leftbutton
-    UIButton *lefthome = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    lefthome.frame = CGRectMake(20, 29, 46, 30);
-    [lefthome setTitle:@"Home" forState:UIControlStateNormal];
-   
-    [lefthome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-// [lefthome addTarget:self action:@selector(homebuttonpressed:) forControlEvents:UIControlEventTouchUpInside];
-    [oneView addSubview:lefthome];
-    //rightbutton
-    
-    }
--(void)homebuttonpressed
-{
-//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-//    UIViewController *pdvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"productDetails"];
-//    //    hplvc.selectedProductId = [[[[[categories objectAtIndex:0] objectAtIndex:parentIndex] valueForKey:@"sub_cat_deatils"] objectAtIndex:childIndex] valueForKey:@"sub_cat_id"];
-//    
-//    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:pdvc
-//                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
-//                                                                     andCompletion:nil];
-    NSLog(@"home button pressed");
-}
- */
 
     @end
