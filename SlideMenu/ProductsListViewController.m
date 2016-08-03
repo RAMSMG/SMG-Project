@@ -27,7 +27,7 @@
 @synthesize tableview, produts,slideOutAnimationEnabled;
 - (void)viewDidLoad {
     
-    
+    self.tableview.bounces = YES;
     [super viewDidLoad];
 
     NSLog(@"Selected product list is : %@", self.selectedProductId);
